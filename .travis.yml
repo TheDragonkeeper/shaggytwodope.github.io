@@ -1,0 +1,29 @@
+language: python
+python: '2.7'
+notifications:
+    email:
+        recipients:
+            - twodopeshaggy@gmail.com
+        on_success: change
+        on_failure: always
+install:
+- npm install -g markdown-spellcheck
+- npm install -g csslint
+- npm install -g try-thread-sleep
+- gem install mdl
+- pip install markdown
+- pip install beautifulsoup4
+- pip install requests
+- pip install flake8
+script:
+- flake8
+- csslint --ignore=ids,box-model input/style.css
+- mdl -s mdl-rules.rb .
+- mdspell --ignore-numbers --en-us -ran "**/**/*.md"
+- make
+- "./link_validator.py output/"
+after_success:
+- "./deploy.sh"
+env:
+  global:
+    secure: phhKcCxzZgLsDrKH9ZCmh23RO9kVMRv6KUa5BXt7cjyic0u0NEvvjlgN4E1c5r2wnszW5LbJHnq4q0cF8RL7Q1HpcdmTbFvibJ0jJYj2kgMGWxUsjVqdTKYp4TDEGH3rJtTklrhaIUrU2SWV7adS+a9ykYESjdGmgv/Fc97P0HUo/N/z4hRvJVrRxfUqblJsDsExnbEz8GWd5BC66jSsCanCSp4+pGdp6FW+HZy1mm2/JJEZm7sGEpjSIjvxr5FydpE0X7+aPHvhbFb2ClGB+l3TIW6QpKG4vLm7VNgQatOz/G0GlXyNRLWqcbXq751vfnmEYMOqDAMdpJxsnwjPut4IWf98iSFcoxDLql7Zit265+R3qdjHnOzGRypGJJ02GgmTgP6lo56wdwtlenRNp5BWqneYfockkCd/S1Jqd8uZxdzvKUu2VG+5j4a5CfFboJ1JspgN6oVqgtkjaduS7zw2ENOo6M97tJu0zhCeOw92YY3OIcN1tyqxhqa1tSO8dhRnKkddcX4LSpGqiX7DkbORB3NsObweZ+ODiaSZGqNiMaQzF+ZU0/AL/GHJR1j7aXpS3wyeI5ABh6q8h+BD6O1XaW4nwrZ1lkwd9299+vBcpXBuRr3WHAiiSHgmgHOltLVruORGajalD+tReTofU0CUgX9qv7pI5URyr3Egj3Q=

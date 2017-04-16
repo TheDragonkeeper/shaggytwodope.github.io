@@ -1,0 +1,198 @@
+# markdown-spellcheck spelling configuration file
+# Format - lines beginning # are comments
+# global dictionary is at the start, file overrides afterwards
+# one word per line, to define a file override use ' - filename'
+# where filename is relative to this configuration file
+ - input/projects.md
+rtv
+qutebrowser
+nixheads
+aur
+pyixirc
+ixirc
+lite-updater
+linuxlite
+lite-controlcenter
+Center
+lite-controlcenter-applet
+xfce4
+gg
+2
+clockr
+ncurses
+flif
+CLI
+Lossless
+ppa
+jarun
+ - input/about.md
+1
+Johnathan
+opensource
+commandline
+pubkey.asc
+gpg
+Tho
+john
+nixheads.co.uk
+twodopeshaggy
+gmail.com
+shaggytwodope
+teknik.io
+riseup.net.
+140
+keybase
+ello
+reddit
+github
+ - input/index.md
+0
+2016-04-26
+03
+33
+css
+specs
+2016-04-25
+05
+html
+datetime
+posts.sort
+p.get
+datetime.strptime
+strftime
+p.post
+p.url
+45
+ - input/blog.2016-06-01.New_site_design.md
+2016-06-01
+05
+12
+ - input/blog.2016-06-01.RSS_test_run.md
+01
+55
+rss
+ - input/blog.2016-06-02.Code_highlighting_test.md
+pre-defined
+2016
+GPL2
+ifndef
+SRC
+_HEADERS
+_LITECC
+_BEGIN
+_DECLS
+_ICON
+_NAME
+lite-controlcenter
+_TOOLTIP
+_MESSAGE
+_RUN
+_COMMAND
+typedef
+struct
+_LccPlugin
+XfcePanelPlugin
+LccPlugin
+_END
+endif
+ - input/blog.2016-06-04.Projects_repo.md
+repo
+sudo
+keyserver
+keyserver.ubuntu.com
+recv-keys
+7086E9CC7EC3233B
+nixcontrolcenter
+debian
+2014
+ - README.md
+ShaggyTwoDope's
+ - src/input/about.md
+opensource
+commandline
+pubkey.asc
+gpg
+nixheads.co.uk
+twodopeshaggy
+gmail.com
+shaggytwodope
+teknik.io
+riseup.net.
+140
+keybase
+ello
+reddit
+github
+ - src/input/blog.2016-06-01.RSS_test_run.md
+RSS
+rss
+ - src/input/blog.2016-06-02.Code_highlighting_test.md
+2016
+GPL2
+ifndef
+SRC
+_HEADERS
+_LITECC
+_BEGIN
+_DECLS
+_ICON
+_NAME
+lite-controlcenter
+_TOOLTIP
+_MESSAGE
+_RUN
+_COMMAND
+typedef
+struct
+_LccPlugin
+XfcePanelPlugin
+LccPlugin
+_END
+endif
+ - src/input/blog.2016-06-04.Projects_repo.md
+repo
+sudo
+keyserver
+keyserver.ubuntu.com
+recv-keys
+7086E9CC7EC3233B
+nixcontrolcenter
+2014
+ - src/input/index.md
+datetime
+posts.sort
+p.get
+datetime.strptime
+strftime
+p.post
+p.url
+ - src/input/projects.md
+ppa
+clockr
+ncurses
+CLI
+rtv
+nixheads
+aur
+pyixirc
+ixirc
+linuxlite
+lite-controlcenter-applet
+xfce4
+gg
+flif
+qutebrowser
+Lossless
+ - input/blog.2016-12-13.Minor_fixes_and_updates.md
+buku
+200-300
+PPA's
+100
+Archlinux's
+AUR
+ - input/log.md
+0.3.8.1
+PPA
+0.3.8
+Archlinux
+vm

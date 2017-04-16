@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="{{ htmlspecialchars(__encoding__) }}">
+  <link href="favicon.ico" rel="shortcut icon">
+  <title>ShaggyTwoDope - {{ htmlspecialchars(page["title"]) }}</title>
+  <meta name="description" content="{{ htmlspecialchars(page.get("description", "shaggy blog")) }}">
+  <meta name="keywords" content="{{ htmlspecialchars(page.get("keywords", "shaggy")) }}">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml">
+  <link href="prism.css" rel="stylesheet">
+<link id="stylesheet" rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="content">
+
+    <p class="big">shaggy<span class="purpletxt">twodope</span>_<span class="greentxt">{{ htmlspecialchars(page["title"]) }}</span></p>
+    <div class="navtxt">
+      <!--%
+      mpages = [p for p in pages if "menu-position" in p]
+      mpages.sort(key=lambda p: int(p["menu-position"]))
+      entry = '<a href="%s">%s</a>'
+      for p in mpages:
+          style = p["title"] == page["title"] and "current" or ""
+          print(entry % (htmlspecialchars(p["url"]), htmlspecialchars(p["title"])))
+      %-->
+    </div><br>
+
+    <div id="seperator">
+      <p></p>
+    </div>
+    <p class="bodytxt">
+      {{ __content__ }}
+      <div id="seperator">
+        <p></p>
+      </div>
+
+
+      <p>© 2016 - generated on {{ today() }} <a href="http://shaggytwodope.github.io/rss.xml">rss</a> <a href="https://travis-ci.org/shaggytwodope/shaggytwodope.github.io">travis</a> <a href="https://github.com/shaggytwodope/shaggytwodope.github.io/tree/dev">commit {{ git_rev() }}</a>
+        </p>
+
+      </div>
+    <script src="prism.js"></script>
+    </body>
+    </html>

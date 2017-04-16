@@ -1,0 +1,559 @@
+WaveSchedule
+{
+	Templates
+	{
+        //
+        // Werbot + Rob-bot Wave
+        //
+		
+		T_TFBot_Heavy_Natascha_Werbad
+		{
+			Class Heavyweapons
+            Name "Slowing Hailstorm Wizard"
+            WeaponRestrictions PrimaryOnly
+            Skill Hard
+            
+            Item "Security Shades"
+            Item "The Team Captain"
+            Item "Natascha"
+            ItemAttributes
+            {
+                ItemName "Natascha"
+                "damage penalty" 0.5
+            }
+		}
+		T_TFBot_Boss_Werbad
+		{
+			Class Pyro
+            Name "Werbot"
+            ClassIcon impostor_werbad
+            Skill Expert
+            Health 30000
+            Scale 1.9
+            Attributes MiniBoss
+            Attributes UseBossHealthBar
+            WeaponRestrictions MeleeOnly
+            Tag boss
+            
+            Item "The Maul"
+            Item "Sight for Sore Eyes"
+            Item "The Wraith Wrap"
+            ItemAttributes
+            {
+                ItemName "The Maul"
+                "damage bonus"	4.0
+            }
+            CharacterAttributes
+            {
+                "health regen"	50
+                "move speed bonus"	0.4
+                "damage force reduction" 0.7
+                "airblast vulnerability multiplier" 0.3
+                "override footstep sound set" 4
+                "airblast vertical vulnerability multiplier" 0.1
+            }
+		}
+		T_TFBot_Boss_Rob
+		{
+			Class Pyro
+            Name "Rob-bot"
+            ClassIcon impostor_orphan
+            Skill Expert
+            Health 30000
+            Scale 1.9
+            Attributes MiniBoss
+            Attributes UseBossHealthBar
+            Attributes AlwaysFireWeapon
+            WeaponRestrictions PrimaryOnly
+            Tag boss
+            
+            Item "The Degreaser"
+            Item "The Googol Glass Eyes"
+            Item "Respectless Robo-Glove"
+            ItemAttributes
+            {
+                ItemName "The Degreaser"
+                "damage bonus"	2.0
+                "weapon burn dmg increased" 3.0
+            }
+            CharacterAttributes
+            {
+                "health regen"	50
+                "move speed bonus"	0.4
+                "damage force reduction" 0.7
+                "airblast vulnerability multiplier" 0.3
+                "override footstep sound set" 4
+                "airblast vertical vulnerability multiplier" 0.1
+            }
+		}
+        
+        //
+        // Fakebob Wave
+        //
+		T_TFBot_Demoman_LochNLoad_Jake
+		{
+            Class Demoman
+            Name "Precise Pipebomb Conjurer"
+            WeaponRestrictions PrimaryOnly
+            
+            Item "The Loch-N-Load"
+            Item "Summer Shades"
+            Item "The Tartantaloons"
+            Item "Humanitarian's Hachimaki"
+        }
+		T_TFBot_Boss_Jake
+		{
+            Class Demoman
+            Name "Fakebob Smegheneghan"
+            ClassIcon impostor_jakebob
+            Skill Expert
+            Health 20000
+            Scale 1.9
+            Attributes MiniBoss
+            Attributes UseBossHealthBar
+            WeaponRestrictions MeleeOnly
+            
+            Item "The Eyelander"
+            Item "The Chargin' Targe"
+            Item "Clan Pride"
+            Item "Graybanns"
+            Item "The Crone's Dome"
+            ItemAttributes
+            {
+                ItemName "The Eyelander"
+                "damage bonus"	3.0
+                "critboost on kill" 8.0
+                "charge impact damage increased" 3.0
+                "no charge impact range" 1
+                "Attack not cancel charge" 1
+            }
+            
+            CharacterAttributes
+            {
+                "health regen"	20
+                "move speed bonus"	0.35
+                "damage force reduction" 0.7
+                "airblast vulnerability multiplier" 0.3
+                "override footstep sound set" 4
+                "airblast vertical vulnerability multiplier" 0.1
+            }
+        }
+        
+        //
+        // Ace Wave
+        //
+		T_TFBot_Scout_Cleaver_Ace
+		{
+			Class Scout
+            Skill Normal
+            Name "Cleaving Wizard"
+			ClassIcon scout_cleaver
+			WeaponRestrictions SecondaryOnly
+            
+			Item "The Brotherhood of Arms"
+            Item "The Flying Guillotine"
+			ItemAttributes
+			{
+				ItemName "The Flying Guillotine"
+				"damage bonus" 0.75
+				"effect bar recharge rate increased" 0.20
+			}
+		}
+        T_TFBot_Boss_Ace
+        {
+            Class Scout
+            Name "Racewonder"
+            ClassIcon impostor_ace
+			Skill Expert
+            Health 20000
+			Scale 1.9
+			Attributes MiniBoss
+			Attributes UseBossHealthBar
+			WeaponRestrictions MeleeOnly
+            
+			Item "The Brotherhood of Arms"
+			Item "The Sandman"
+			ItemAttributes
+			{
+				ItemName "The Sandman"
+				"damage bonus" 2.0
+				"effect bar recharge rate increased" 0.20
+			}
+			CharacterAttributes
+			{
+				"health regen"	20
+				"move speed bonus"	1.0
+				"damage force reduction" 0.7
+				"airblast vulnerability multiplier" 0.3
+				"override footstep sound set" 4
+				"airblast vertical vulnerability multiplier" 0.5
+			}
+        }
+        
+        //
+        // Thunder Wave
+        //
+		T_TFBot_Scout_FanOWar_Thunder
+		{
+			Class Scout
+            Skill Expert
+            Name "Fan O'War Scout"
+            ClassIcon scout_fanowar
+			WeaponRestrictions MeleeOnly
+			Item "The Fan O'War"
+            Item "Ye Olde Baker Boy"
+			Item "The Flight of the Monarch"
+            Attributes AlwaysCrit            
+			Attributes AutoJump
+            AutoJumpMin 5
+            AutoJumpMax 10
+            ItemAttributes
+            {
+                ItemName "The Fan O'War"
+                "crit forces victim to laugh" 1
+                "crit from behind" 1
+                "cancel falling damage" 1
+            }
+			CharacterAttributes
+			{
+				"move speed bonus"	1.3
+				"increased jump height" 3
+			}
+		}
+        T_TFBot_Boss_Thunder
+        {
+            Class Sniper
+            Name "Battery Breastplates"
+            ClassIcon impostor_thunder
+			Skill Expert
+            Health 40000
+			Scale 1.9
+			Attributes MiniBoss
+			Attributes UseBossHealthBar
+            Attributes HoldFireUntilFullReload
+			WeaponRestrictions PrimaryOnly
+            
+			Item "The Dread Hiding Hood"
+            Item "The Virus Doctor"
+            Item "The Huntsman"
+            ItemAttributes
+			{
+                ItemName "The Huntsman"
+                "fire rate bonus" 0.001
+                "faster reload rate" 0.001
+                "sniper charge per sec" 100.0
+                "damage bonus"	2.0
+                "bleeding duration" 5.0
+                "minicrits become crits" 1.0
+			}
+            
+			CharacterAttributes
+			{
+				"health regen"	50
+				"move speed bonus"	0.35
+				"damage force reduction" 0.7
+				"airblast vulnerability multiplier" 0.3
+				"override footstep sound set" 4
+				"airblast vertical vulnerability multiplier" 0.1
+			}
+        }
+        
+        //
+        // Flipples Wave
+        //
+        T_TFBot_Heavy_Flipples_A
+		{
+            Class Heavyweapons
+            Skill Expert
+            Name "Flaming Hailstorm Wizard"
+			Item "The Huo Long Heatmaker"
+            Item "The Macho Mann"
+            Item "Heavy Do-rag"
+		}
+        T_TFBot_Heavy_Flipples_B
+		{
+			Class Heavyweapons
+            Name "Slowing Hailstorm Wizard"
+            WeaponRestrictions PrimaryOnly
+            Skill Expert
+            Item "The Macho Mann"
+            Item "Heavy Do-rag"
+            Item "Natascha"
+            ItemAttributes
+            {
+                ItemName "Natascha"
+                "damage penalty" 0.5
+            }
+		}
+        T_TFBot_Engineer_Flipples
+		{
+			Class Engineer
+			Name "Building Summoner"
+			Skill Expert
+			TeleportWhere spawn_generic
+			Health 500
+			Attributes TeleportToHint
+            Item "The Virtual Reality Headset"
+		}
+        T_TFBot_Boss_Flipples
+        {
+            Class Heavyweapons
+            Name "Flopples"
+            ClassIcon impostor_flipples
+			Skill Expert
+			Health 40000
+            Scale 1.9
+			WeaponRestrictions SecondaryOnly
+			Attributes MiniBoss
+			Attributes HoldFireUntilFullReload
+			Attributes UseBossHealthBar
+            //Attributes AlwaysCrit
+            
+            Item "The Macho Mann"
+            Item "Heavy Do-rag"
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_SHOTGUN_HWG"
+				"faster reload rate" 0.8
+				"fire rate bonus" 0.4
+				"bullets per shot bonus" 8
+				"damage penalty" 0.6
+                "clip size bonus" 0.2
+			}
+			CharacterAttributes
+			{
+				"health regen"	100
+				"move speed bonus"	0.35
+				"damage force reduction" 0.7
+				"airblast vulnerability multiplier" 0.0
+				"override footstep sound set" 4
+				"airblast vertical vulnerability multiplier" 0.0
+			}
+        }
+        //
+        // Degon Wave
+        //
+        
+        T_TFBot_Heavyweapons_Heavyweight_Champ_Degon
+        {
+            Class Heavyweapons
+            Name "Heavyweight Warrior"
+			ClassIcon heavy_champ
+			WeaponRestrictions MeleeOnly
+			Attributes AlwaysCrit
+            
+			Item "Point and Shoot"
+			Item "The All-Father"
+			Item "Apoco-Fists"
+			ItemAttributes
+			{
+				ItemName "Apoco-Fists"
+				"damage bonus" 2.0
+            }
+			CharacterAttributes
+			{
+				"move speed bonus"	1.30
+			}
+        }
+		T_TFBot_Soldier_Stomp_Degon
+		{
+			Class Soldier
+			Name "Stomping Wizard"
+			ClassIcon soldier_mantreads
+			Skill Expert
+			WeaponRestrictions MeleeOnly
+            Item "The Mantreads"
+            Item "The Market Gardener"
+            Item "Rocket Jumper"
+            Item "Lord Cockswain's Pith Helmet"
+			Attributes AlwaysCrit
+			Attributes AutoJump
+            //Attributes IgnoreFlag
+            AutoJumpMin 2
+			AutoJumpMax 4
+			Health 350
+            Scale 1.3
+			CharacterAttributes
+			{
+				"health regen"	30
+				"increased jump height" 5.0
+				"move speed bonus"	1.5
+			}
+		}
+        T_TFBot_Boss_Degon
+        {
+            Class Soldier
+            Name "Decoy Degon"
+            ClassIcon impostor_degon
+			Skill Expert
+            Health 50000
+			Scale 1.9
+			Attributes MiniBoss
+			Attributes UseBossHealthBar
+			Attributes HoldFireUntilFullReload
+			WeaponRestrictions SecondaryOnly
+            
+			Item "Point and Shoot"
+			Item "The All-Father"
+			Item "The Righteous Bison"
+			ItemAttributes
+			{
+				ItemName "The Righteous Bison"
+				"damage bonus" 3.0
+				"faster reload rate" 0.001
+				"fire rate bonus" 0.15
+				"projectile spread angle penalty" 3
+			}
+			CharacterAttributes
+			{
+				"health regen"	100
+				"move speed bonus"	0.35
+				"damage force reduction" 0.7
+				"airblast vulnerability multiplier" 0.3
+				"override footstep sound set" 4
+				"airblast vertical vulnerability multiplier" 0.1
+			}
+        }
+        
+        //
+        // Sevie
+        //
+        
+		T_TFBot_Soldier_Concheror_Sevie
+		{
+			Class Soldier
+			Name "Healing Rocket Summoner"
+			Skill Normal
+			ClassIcon soldier_conch
+			Attributes SpawnWithFullCharge
+			Item "The Concheror"
+            Item "The Chief Constable"
+			CharacterAttributes
+			{
+				"increase buff duration"	9.0
+			}
+		}
+        T_TFBot_Boss_Sevie
+        {
+            Class Soldier
+            Name "ServoCookie"
+            ClassIcon impostor_sevie
+			Skill Expert
+            Health 50000
+			Scale 1.9
+			Attributes MiniBoss
+			Attributes UseBossHealthBar
+			WeaponRestrictions PrimaryOnly
+            Attributes AlwaysCrit
+            
+            Item "The Chief Constable"
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_ROCKETLAUNCHER"
+				"damage bonus" 6.0
+                "damage causes airblast" 1
+				"blast radius increased" 1.3
+				"use large smoke explosion" 1
+				"faster reload rate" 0.1
+				"fire rate bonus" 3.0
+				"clip size penalty" 0.25
+				"Projectile speed increased" 1.0
+				"projectile spread angle penalty" 3
+			}
+			CharacterAttributes
+			{
+				"health regen"	100
+				"move speed bonus"	0.35
+				"damage force reduction" 0.7
+				"airblast vulnerability multiplier" 0.3
+				"override footstep sound set" 4
+				"airblast vertical vulnerability multiplier" 0.1
+			}
+        }
+        
+        //
+        // Warboss
+        //
+        
+		T_TFBot_Pyro_BackBurner_Warboss
+		{
+			Class Pyro
+			Skill Normal
+            Name "Pyromancer"
+            Attributes AlwaysFireWeapon
+			WeaponRestrictions PrimaryOnly
+            Item "The Last Breath"
+            Item "The Wraith Wrap"
+			Item "The Backburner"
+			ItemAttributes
+			{
+				ItemName "The Backburner"
+				"damage bonus" 1.0
+			}
+		}
+        T_TFBot_Boss_Warboss
+        {
+            Class Heavyweapons
+            Name "Warbot Grimjaw"
+            ClassIcon impostor_warboss
+			Skill Expert
+            Health 40000
+			Scale 1.9
+			Attributes MiniBoss
+			Attributes UseBossHealthBar
+			WeaponRestrictions PrimaryOnly
+            Attributes AlwaysCrit
+            
+            Item "Big Steel Jaw of Summer Fun"
+            Item "The Bunsen Brave"
+			Item "The Huo Long Heatmaker"
+			ItemAttributes
+			{
+				ItemName "The Huo Long Heatmaker"
+				"damage bonus" 2.0
+                "weapon burn dmg increased" 3.0
+			}
+			CharacterAttributes
+			{
+				"health regen"	200
+				"move speed bonus"	0.35
+				"damage force reduction" 0.7
+				"airblast vulnerability multiplier" 0.3
+				"override footstep sound set" 4
+				"airblast vertical vulnerability multiplier" 0.1
+			}
+        }
+        T_TFBot_Boss_Lacey
+        {
+            Class Heavyweapons
+            Name "Commissar Laser"
+            ClassIcon impostor_lacey
+			Skill Expert
+            Health 40000
+			Scale 1.9
+			Attributes MiniBoss
+			Attributes UseBossHealthBar
+			WeaponRestrictions PrimaryOnly
+            Attributes AlwaysCrit
+            
+            //Item "Die Regime-Panzerung"
+            Item "Der Maschinensoldaten-Helm"
+			Item "Deflector"
+			ItemAttributes
+			{
+				ItemName "Deflector"
+				"damage bonus" 2.0
+                "attack projectiles" 1	// force ability to shoot down projectiles
+			}
+			CharacterAttributes
+			{
+				"health regen"	200
+				"move speed bonus"	0.35
+				"damage force reduction" 0.7
+				"airblast vulnerability multiplier" 0.3
+				"override footstep sound set" 4
+				"airblast vertical vulnerability multiplier" 0.1
+			}
+        }
+    }
+}

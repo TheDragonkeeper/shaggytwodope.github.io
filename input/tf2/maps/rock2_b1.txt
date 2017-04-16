@@ -1,0 +1,47 @@
+**** This map is for Team Fortress 2 brought to you by the Collective Gamers Community & Pwnshop Gaming****
+=====================================================================
+
+Title			: Rock 2
+Filename		: rock2_b1
+Authors			: Sacrifist, Hiya!, KUSA
+Email			: admin@cgc-online.net
+Description		: Team Fortress 2 Capture the intel map
+Recomended # of players	: 24-32
+
+=====================================================================
+
+Custom Textures		: Yes
+Custom Models		: No
+Custom Sounds		: Yes
+Editor			: Hammer
+Compile Tools		: Valve Compile Tools (SDK as of 11/20/2007)
+Compile Time		: 9 minutes (Full Compile)
+
+=====================================================================
+
+Objective:
+Your team must steal the enemy's intel that is located in their warden's office and take it to their gas chamber.
+
+Other Notes:
+A team can open an alternate route under the yard by blowing up
+the barricades in the underground tunnels.
+
+- How to Install Map
+Place the .bsp file into below directory (ex. default installed directory)
+C:\Program Files\Steam\SteamApps\(your account name)\team fortress 2\tf\maps
+
+=====================================================================
+
+** Special Thanks to **
+CGC-Online.net, PwnShopGaming.com, agentart, menthol, iZihbO, darkscope, 
+all the players who ever tested this map, and of course Kusa for bringing
+this badboy to Source and allowing us to use his map as a template:)
+
+=====================================================================
+
+DISTRIBUTION INFORMATION:
+This map can not be re-distributed, re-created, or modified without the permission of Sacrifist (he holds the vmf of this version)
+If you wish to re-distribute, re-create or modify this level in any way, 
+shape, or form, please ask sacrifist for the .vmf file. IF you are given the vmf, you must include this info file with NO MODIFICATIONS. 
+
+=====================================================================

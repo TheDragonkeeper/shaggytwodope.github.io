@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+<channel>
+<title>ShaggyTwoDope's Blog</title>
+<link>/blog.html</link>
+<description>A simple blog for Johnathan 'ShaggyTwoDope' Jenkins</description>
+<language>en-us</language>
+<pubdate>Tue, 13 Dec 2016 15:07:17 -0000</pubdate>
+<lastbuilddate>Tue, 13 Dec 2016 15:07:17 -0000</lastbuilddate>
+<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+<generator>Poole</generator>
+
+<item>
+    <title>Minor fixes and updates</title>
+    <link>/blog.2016-12-13.Minor_fixes_and_updates.html</link>
+    <description>Minor site fixes and personal updates.</description>
+    <pubdate>Tue, 13 Dec 2016 20:00:00 -0000</pubdate>
+    <guid>/blog.2016-12-13.Minor_fixes_and_updates.html</guid>
+</item>
+
+<item>
+    <title>Projects repo</title>
+    <link>/blog.2016-06-04.Projects_repo.html</link>
+    <description>Created a nice repo for my projects.</description>
+    <pubdate>Sat, 04 Jun 2016 19:00:00 -0000</pubdate>
+    <guid>/blog.2016-06-04.Projects_repo.html</guid>
+</item>
+
+<item>
+    <title>Code highlighting test</title>
+    <link>/blog.2016-06-02.Code_highlighting_test.html</link>
+    <description>A test post for highlighting code.</description>
+    <pubdate>Thu, 02 Jun 2016 19:00:00 -0000</pubdate>
+    <guid>/blog.2016-06-02.Code_highlighting_test.html</guid>
+</item>
+
+<item>
+    <title>New site design</title>
+    <link>/blog.2016-06-01.New_site_design.html</link>
+    <description>New site design created.</description>
+    <pubdate>Wed, 01 Jun 2016 19:00:00 -0000</pubdate>
+    <guid>/blog.2016-06-01.New_site_design.html</guid>
+</item>
+
+<item>
+    <title>RSS test run</title>
+    <link>/blog.2016-06-01.RSS_test_run.html</link>
+    <description>Added RSS feeds.</description>
+    <pubdate>Wed, 01 Jun 2016 19:00:00 -0000</pubdate>
+    <guid>/blog.2016-06-01.RSS_test_run.html</guid>
+</item>
+
+</channel>
+</rss>
