@@ -5,22 +5,22 @@ Archive: sid
 Origin: Internet
 Label: Shaggy's Repo
 Architecture: i386 amd64 arm64 armhf all
-Date: Thu, 13 Apr 2017 15:19:35 UTC
+Date: Wed, 26 Apr 2017 06:01:50 UTC
 Valid-Until: Tue, 30 Nov 2038 00:00:00 UTC
 MD5Sum:
- f25db9d7390bfb5de5fa3b87167bb51f            20003 Packages
- 55a67d6bfa1dac6d71e8fe082f0e17c7            20003 Packages
+ 56d0454c443e76db3c19c55f86f22d93            20598 Packages
+ b2eccb84505ade284db9c51588ef1666            20598 Packages
 SHA256:
- 13fa07fcfaa5eade82258880e31136f8de629dce24adcd2cf846a68c05477ed6            20003 Packages
- d64e13d3769f6991295e88450faaff59b87ae6125a3c80e682855fd2892f88bf             5596 Packages.gz
+ cf731f02df1b40299fb0f99be0d12afd8bb9b30fa07749a4acf3941f36b91cd5            20598 Packages
+ b3d5aabdd3fab324060f1d00a9ef4cb3a01a9052bc413272b322a2ba11973216             5706 Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCAAdFiEEjxrTjeighUSlUSmBcIbpzH7DIzsFAljvlwcACgkQcIbpzH7D
-Izt8MQf/a/Ye2xir52inavy5d28i3jkRrzJh5iO09wAgdkWw5VcbSHhSqx2awlDj
-f8zNKN30+8ffpHX1lwhPKqsP61Hz8jSNexsbHM6t8fipUq/wv0W7tZHBq9nIIonB
-h5HwZjFML+t4FRbXFMjbZF900bzz/cCvp+oLPYVzTEZWaIPu7vRx/N1MDsltU3LS
-p4dVEOnoIyKmy3aSlh5H0RAQw9DFkOETyvs4FTItJpZMGjAoj2ItO5WIflXcqhxX
-E+4AbHFtE8uGhK1jv46Xrhk30ZUhjnFpp17zFeUbFTDz03SHnlCTq97b2cKg5IEU
-Mywx2D5wo28dxDpXHxtjO8HOGM34sQ==
-=jC2r
+iQEzBAEBCAAdFiEEjxrTjeighUSlUSmBcIbpzH7DIzsFAlkAN88ACgkQcIbpzH7D
+IztqAwgAkD8DyGy3dum/nTrhT2XQyK9e6RWIkBuygk4s8GXoDp6M8aYA5d1JxpLT
+LTZVdNE6yLDyuYfgR4ECoQFsuL4ff/phgnTlwhGciDakMcugoooXz2piEYxttBte
+6Yh3uCqSUnH2I+0MgXTETQy4YFqZxDo1vUg+Taf05sQH93eG4r8ukHlexaE3bgmo
+YoQCy3MniPYtmsC214WJMpotM2toQFAbPafbfon3qpAtflZddFH2olQvqBKrEXnJ
+4VW30T4dWu4i9VcTVsePVU4KnVnonPt/WUU6jQwP84ZFjzVs/LkAYXXyvEP9zLOn
+ayPmNnNG8uRF/zVsRYHaKTsks4RH4g==
+=4LUK
 -----END PGP SIGNATURE-----

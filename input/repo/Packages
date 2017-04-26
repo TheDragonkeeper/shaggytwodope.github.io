@@ -157,6 +157,23 @@ Homepage: https://github.com/jarun/buku/
 Description: Powerful command-line bookmark manager
  See https://github.com/jarun/Buku#readme.
 
+Package: buku
+Version: 3.0.0-1
+Architecture: all
+Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 132
+Depends: python3 (>= 3.3), python3-crypto, python3-bs4, python3-urllib3, python3-requests
+Filename: ./all/buku_3.0.0-1_all.deb
+Size: 39676
+MD5sum: bb67ecf913ea3dd0dbf8b471260324b6
+SHA1: 5163bd8ef393f6ef3fbc1efce44125fdd71eb089
+SHA256: c2cc834f99d129354fd4d919438b33428038736edbe9812acdde6df477b4d3b3
+Section: misc
+Priority: optional
+Homepage: https://github.com/jarun/buku/
+Description: Powerful command-line bookmark manager
+ See https://github.com/jarun/Buku#readme.
+
 Package: diary
 Version: 0.3-3
 Architecture: i386
