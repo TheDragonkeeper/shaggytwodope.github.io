@@ -1,21 +1,5 @@
 Package: alarm-clock
 Version: 1.4.5-1
-Architecture: i386
-Maintainer: John Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 1142
-Depends: libc6 (>= 2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.31.8), libgstreamer1.0-0 (>= 1.0.0), libgtk2.0-0 (>= 2.14.0), libnotify4 (>= 0.7.0), libunique-1.0-0 (>= 1.0.0)
-Filename: ./i386/alarm-clock_1.4.5-1_i386.deb
-Size: 500604
-MD5sum: 35918e90826f460b73b7bf3f6232299e
-SHA1: a27c62ed59719017f2d7f1375e807eff75eb5104
-SHA256: 320ccd7043b715e1d65cf3dcb1da538cb7002fc7f637b7694ecaa2b3d0d757f0
-Section: misc
-Priority: optional
-Homepage: https://github.com/shaggytwodope/alarm-clock
-Description: Alarm clock for the desktop.
-
-Package: alarm-clock
-Version: 1.4.5-1
 Architecture: amd64
 Maintainer: John Jenkins <twodopeshaggy@gmail.com>
 Installed-Size: 1125
@@ -25,6 +9,22 @@ Size: 497322
 MD5sum: 9cd6574497ee83cdee9e83adc62bb705
 SHA1: 3ac688936d3ef2e56417854b053815b99118d941
 SHA256: 72ef613000c33a5878873e3836e6e1efc3798014e412598ee0e1cad01d11ad95
+Section: misc
+Priority: optional
+Homepage: https://github.com/shaggytwodope/alarm-clock
+Description: Alarm clock for the desktop.
+
+Package: alarm-clock
+Version: 1.4.5-1
+Architecture: i386
+Maintainer: John Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 1142
+Depends: libc6 (>= 2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.31.8), libgstreamer1.0-0 (>= 1.0.0), libgtk2.0-0 (>= 2.14.0), libnotify4 (>= 0.7.0), libunique-1.0-0 (>= 1.0.0)
+Filename: ./i386/alarm-clock_1.4.5-1_i386.deb
+Size: 500604
+MD5sum: 35918e90826f460b73b7bf3f6232299e
+SHA1: a27c62ed59719017f2d7f1375e807eff75eb5104
+SHA256: 320ccd7043b715e1d65cf3dcb1da538cb7002fc7f637b7694ecaa2b3d0d757f0
 Section: misc
 Priority: optional
 Homepage: https://github.com/shaggytwodope/alarm-clock
@@ -94,22 +94,6 @@ Original-Maintainer: Julian Andres Klode <jak@debian.org>
 
 Package: archiver
 Version: 2.0.0-0
-Architecture: i386
-Maintainer: John Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 2961
-Filename: ./i386/archiver_2.0.0-0_i386.deb
-Size: 835836
-MD5sum: a21f09bc6da093a16b2a7681f60e78b5
-SHA1: 9452b2eaf07c85d27b02aa4941033d8bdbccf6c5
-SHA256: 8c4c1c59dcee04eed7e36c0416859b4dd084c2b97ed3ea93d8bdf45a23c804b8
-Section: net
-Priority: extra
-Homepage: https://github.com/mholt/archiver
-Description: Easily create and extract .zip, .tar, .tar.gz, .tar.bz2, .tar.xz, and .rar (extract-only) files with Go
- Package archiver makes it trivially easy to make and extract common archive formats such as .zip, and .tar.gz. Simply name the input and output file(s).
-
-Package: archiver
-Version: 2.0.0-0
 Architecture: amd64
 Maintainer: John Jenkins <twodopeshaggy@gmail.com>
 Installed-Size: 3713
@@ -118,6 +102,22 @@ Size: 887810
 MD5sum: 508906761c5424f0b504a0a2e027fd6e
 SHA1: 77a2acd85ebc3ea4c692efbbff56d90e82f378bb
 SHA256: ec5518ea5284567bf23ddd68d5d8f13d28132ef0ae0a5c56646fcc2a9a0520ba
+Section: net
+Priority: extra
+Homepage: https://github.com/mholt/archiver
+Description: Easily create and extract .zip, .tar, .tar.gz, .tar.bz2, .tar.xz, and .rar (extract-only) files with Go
+ Package archiver makes it trivially easy to make and extract common archive formats such as .zip, and .tar.gz. Simply name the input and output file(s).
+
+Package: archiver
+Version: 2.0.0-0
+Architecture: i386
+Maintainer: John Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 2961
+Filename: ./i386/archiver_2.0.0-0_i386.deb
+Size: 835836
+MD5sum: a21f09bc6da093a16b2a7681f60e78b5
+SHA1: 9452b2eaf07c85d27b02aa4941033d8bdbccf6c5
+SHA256: 8c4c1c59dcee04eed7e36c0416859b4dd084c2b97ed3ea93d8bdf45a23c804b8
 Section: net
 Priority: extra
 Homepage: https://github.com/mholt/archiver
@@ -176,22 +176,6 @@ Description: Powerful command-line bookmark manager
 
 Package: diary
 Version: 0.3-3
-Architecture: i386
-Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 30
-Filename: ./i386/diary_0.3-3_i386.deb
-Size: 8448
-MD5sum: d607a16015fbb849b7d493f01911e2c2
-SHA1: 365c1cc3460ec347f0de57d0048ca7939d416608
-SHA256: 4844cf5f69159f15547744290a6e2a2fa813acebd42b272bd5df9c3329130081
-Section: misc
-Priority: optional
-Homepage: https://github.com/in0rdr/diary
-Description: Simple CLI diary
- See https://github.com/in0rdr/diary
-
-Package: diary
-Version: 0.3-3
 Architecture: amd64
 Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
 Installed-Size: 30
@@ -206,32 +190,32 @@ Homepage: https://github.com/in0rdr/diary
 Description: Simple CLI diary
  See https://github.com/in0rdr/diary
 
-Package: drive
-Version: 0.3.9.1-2
-Architecture: armhf
-Maintainer: John Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 11611
-Filename: ./armhf/drive_0.3.9.1-2_armhf.deb
-Size: 2226722
-MD5sum: 552b9984a52eb5f0deba868fcff4ed76
-SHA1: 0484e97638668f7615022f44fda547f2b7a0020d
-SHA256: 66f8b40d170e3e2950649f5a91e0158cf1a0934093b55359d4700baa27150be2
-Section: net
-Priority: extra
-Homepage: https://github.com/odeke-em/drive
-Description: Google Drive tool written in Go language
- Command line tool for managing data on Google drive.
+Package: diary
+Version: 0.3-3
+Architecture: i386
+Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 30
+Filename: ./i386/diary_0.3-3_i386.deb
+Size: 8448
+MD5sum: d607a16015fbb849b7d493f01911e2c2
+SHA1: 365c1cc3460ec347f0de57d0048ca7939d416608
+SHA256: 4844cf5f69159f15547744290a6e2a2fa813acebd42b272bd5df9c3329130081
+Section: misc
+Priority: optional
+Homepage: https://github.com/in0rdr/diary
+Description: Simple CLI diary
+ See https://github.com/in0rdr/diary
 
 Package: drive
 Version: 0.3.9.1-2
-Architecture: i386
+Architecture: arm64
 Maintainer: John Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 11362
-Filename: ./i386/drive_0.3.9.1-2_i386.deb
-Size: 2469526
-MD5sum: 047f887c1298fa1c9b08f87a51936d11
-SHA1: 2728c6cf415802567446449664d22a6c85f95e28
-SHA256: f6c2fa4aa91ca8aca2208371989054224e0e5c9401626d3733f7010f820ff89b
+Installed-Size: 13105
+Filename: ./arm64/drive_0.3.9.1-2_arm64.deb
+Size: 2334328
+MD5sum: fbd67ecb9ce09b8346a86d5078cea1ad
+SHA1: 3d360050c0bf16d51eb8a1a85a423e92fbb04a5d
+SHA256: d95fbf43cac129fc4a20d3056ba11ad3481c6ee512c178df225a14f560a410e7
 Section: net
 Priority: extra
 Homepage: https://github.com/odeke-em/drive
@@ -256,14 +240,30 @@ Description: Google Drive tool written in Go language
 
 Package: drive
 Version: 0.3.9.1-2
-Architecture: arm64
+Architecture: i386
 Maintainer: John Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 13105
-Filename: ./arm64/drive_0.3.9.1-2_arm64.deb
-Size: 2334328
-MD5sum: fbd67ecb9ce09b8346a86d5078cea1ad
-SHA1: 3d360050c0bf16d51eb8a1a85a423e92fbb04a5d
-SHA256: d95fbf43cac129fc4a20d3056ba11ad3481c6ee512c178df225a14f560a410e7
+Installed-Size: 11362
+Filename: ./i386/drive_0.3.9.1-2_i386.deb
+Size: 2469526
+MD5sum: 047f887c1298fa1c9b08f87a51936d11
+SHA1: 2728c6cf415802567446449664d22a6c85f95e28
+SHA256: f6c2fa4aa91ca8aca2208371989054224e0e5c9401626d3733f7010f820ff89b
+Section: net
+Priority: extra
+Homepage: https://github.com/odeke-em/drive
+Description: Google Drive tool written in Go language
+ Command line tool for managing data on Google drive.
+
+Package: drive
+Version: 0.3.9.1-2
+Architecture: armhf
+Maintainer: John Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 11611
+Filename: ./armhf/drive_0.3.9.1-2_armhf.deb
+Size: 2226722
+MD5sum: 552b9984a52eb5f0deba868fcff4ed76
+SHA1: 0484e97638668f7615022f44fda547f2b7a0020d
+SHA256: 66f8b40d170e3e2950649f5a91e0158cf1a0934093b55359d4700baa27150be2
 Section: net
 Priority: extra
 Homepage: https://github.com/odeke-em/drive
@@ -340,22 +340,6 @@ Description: Nix Updater
 
 Package: nnn
 Version: 1.0-1
-Architecture: i386
-Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 42
-Filename: ./i386/nnn_1.0-1_i386.deb
-Size: 17456
-MD5sum: cf4acc6ec3c53b9fd630737dcf69d910
-SHA1: 5c6fed3a9c90e2893b080547c50801c0a976de7c
-SHA256: e2cdcaafe3d876c095944a09e4f5d0715c0e445e485dd73027f186f5fba02d7f
-Section: misc
-Priority: optional
-Homepage: https://github.com/jarun/nnn/
-Description: Free, fast, friendly file browser.
- See https://github.com/jarun/nnn#readme.
-
-Package: nnn
-Version: 1.0-1
 Architecture: amd64
 Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
 Installed-Size: 47
@@ -364,6 +348,22 @@ Size: 18268
 MD5sum: b9302d1494be21af51f8136ec188d1c3
 SHA1: e3629f14f674652107221af9337a37bc19f26df2
 SHA256: 2da0efc798623a0e3eb7fecf8b0783c9426efe69a50b2611f2cae4295abcca06
+Section: misc
+Priority: optional
+Homepage: https://github.com/jarun/nnn/
+Description: Free, fast, friendly file browser.
+ See https://github.com/jarun/nnn#readme.
+
+Package: nnn
+Version: 1.0-1
+Architecture: i386
+Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 42
+Filename: ./i386/nnn_1.0-1_i386.deb
+Size: 17456
+MD5sum: cf4acc6ec3c53b9fd630737dcf69d910
+SHA1: 5c6fed3a9c90e2893b080547c50801c0a976de7c
+SHA256: e2cdcaafe3d876c095944a09e4f5d0715c0e445e485dd73027f186f5fba02d7f
 Section: misc
 Priority: optional
 Homepage: https://github.com/jarun/nnn/
@@ -474,21 +474,6 @@ Original-Maintainer: Julian Andres Klode <jak@debian.org>
 
 Package: soundcloud-m3u
 Version: 1.0.0-2
-Architecture: i386
-Maintainer: John Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 5227
-Filename: ./i386/soundcloud-m3u_1.0.0-2_i386.deb
-Size: 1416048
-MD5sum: f9bfde214935419d4e6fc5531dffe263
-SHA1: f7af57513f0527f66f8a6459740da8d0c01781ac
-SHA256: 9ddcf9988350c0b1dd7277ba1aebe692b7213cdc94610a88376fcd7f4fa74f9b
-Section: net
-Priority: extra
-Homepage: https://github.com/dangodai/soundcloud-m3u
-Description: A command line tool to generate .m3u playlists pointing to Soundcloud streams
-
-Package: soundcloud-m3u
-Version: 1.0.0-2
 Architecture: amd64
 Maintainer: John Jenkins <twodopeshaggy@gmail.com>
 Installed-Size: 6678
@@ -503,15 +488,15 @@ Homepage: https://github.com/dangodai/soundcloud-m3u
 Description: A command line tool to generate .m3u playlists pointing to Soundcloud streams
 
 Package: soundcloud-m3u
-Version: 1.1.0-1
+Version: 1.0.0-2
 Architecture: i386
 Maintainer: John Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 4208
-Filename: ./i386/soundcloud-m3u_1.1.0-1_i386.deb
-Size: 1266694
-MD5sum: 3da6461ecba44fcfb21308ca6b68fe91
-SHA1: 3fe16be5f661a3c55f2c2db6121d7e13b2934fb8
-SHA256: 3f0db1671495298682d965cc94ac2eaf9253c963eca044591920c79172ef2a28
+Installed-Size: 5227
+Filename: ./i386/soundcloud-m3u_1.0.0-2_i386.deb
+Size: 1416048
+MD5sum: f9bfde214935419d4e6fc5531dffe263
+SHA1: f7af57513f0527f66f8a6459740da8d0c01781ac
+SHA256: 9ddcf9988350c0b1dd7277ba1aebe692b7213cdc94610a88376fcd7f4fa74f9b
 Section: net
 Priority: extra
 Homepage: https://github.com/dangodai/soundcloud-m3u
@@ -527,6 +512,21 @@ Size: 1353474
 MD5sum: 485ab246d7d2cb4bcbb2c12d6e45a27b
 SHA1: 004b1570042f361f8d7020fec05781e8b356ea7e
 SHA256: 20f8d384e6f93e17448ff3d53dc128abb02424b9bb95fed7e025866cbd9f22ea
+Section: net
+Priority: extra
+Homepage: https://github.com/dangodai/soundcloud-m3u
+Description: A command line tool to generate .m3u playlists pointing to Soundcloud streams
+
+Package: soundcloud-m3u
+Version: 1.1.0-1
+Architecture: i386
+Maintainer: John Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 4208
+Filename: ./i386/soundcloud-m3u_1.1.0-1_i386.deb
+Size: 1266694
+MD5sum: 3da6461ecba44fcfb21308ca6b68fe91
+SHA1: 3fe16be5f661a3c55f2c2db6121d7e13b2934fb8
+SHA256: 3f0db1671495298682d965cc94ac2eaf9253c963eca044591920c79172ef2a28
 Section: net
 Priority: extra
 Homepage: https://github.com/dangodai/soundcloud-m3u
