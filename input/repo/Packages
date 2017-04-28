@@ -287,6 +287,23 @@ Homepage: https://github.com/jarun/googler/
 Description: Google Search and News from the command-line
  See https://github.com/jarun/googler#readme.
 
+Package: googler
+Version: 3.1-1
+Architecture: all
+Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 105
+Depends: python3 (>= 3.3)
+Filename: ./all/googler_3.1-1_all.deb
+Size: 33658
+MD5sum: f845b54b700ae39c700766cad078540d
+SHA1: 48fe3b8bef923e33bb701efbec7b32f724585019
+SHA256: d830f40064d1ec4e7267fa5fee0ee30b8fd63228c7f3728c7c3ecb6bdec89d87
+Section: misc
+Priority: optional
+Homepage: https://github.com/jarun/googler/
+Description: Google Search and News from the command-line
+ See https://github.com/jarun/googler#readme.
+
 Package: imgp
 Version: 2.2-0
 Architecture: all
