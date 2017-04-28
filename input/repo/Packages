@@ -270,6 +270,48 @@ Homepage: https://github.com/odeke-em/drive
 Description: Google Drive tool written in Go language
  Command line tool for managing data on Google drive.
 
+Package: flif
+Version: 0.3-16
+Architecture: amd64
+Maintainer: John Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 3937
+Depends: apngdis (>= 2.5), imagemagick (>= 8:6.8)
+Recommends: viewflif, gif2flif, apng2flif
+Filename: ./amd64/flif_0.3-16_amd64.deb
+Size: 516630
+MD5sum: 558462bc25059b269e83dda7fead0098
+SHA1: 814c500114ff8ae9a3c7da65c27a0e677fc6072d
+SHA256: 298dcf02a7491e1b9c1cd99bc92a3cda3f636607ed92bb396debf960c8d9744e
+Section: graphics
+Priority: optional
+Homepage: http://flif.info
+Description: Free Lossless Image Format (FLIF) encoder/decoder
+ FLIF is a lossless image (and animation) format.
+ It tends to compress better than other image compression formats.
+ This is the reference implementation of the FLIF encoder/decoder.
+ The command-line utility 'flif' converts FLIF to/from PNG or PNM.
+
+Package: flif
+Version: 0.3-16
+Architecture: i386
+Maintainer: John Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 3921
+Depends: apngdis (>= 2.5), imagemagick (>= 8:6.8)
+Recommends: viewflif, gif2flif, apng2flif
+Filename: ./i386/flif_0.3-16_i386.deb
+Size: 582072
+MD5sum: d90b6957955d378f1289fe7ebcc3bbe9
+SHA1: 84f5eaa831dc00401308646cb5975009fa593e1f
+SHA256: c89839067e36a1dc1a78d826e295455e49951ccdf159b2d9123dd43c30e279d4
+Section: graphics
+Priority: optional
+Homepage: http://flif.info
+Description: Free Lossless Image Format (FLIF) encoder/decoder
+ FLIF is a lossless image (and animation) format.
+ It tends to compress better than other image compression formats.
+ This is the reference implementation of the FLIF encoder/decoder.
+ The command-line utility 'flif' converts FLIF to/from PNG or PNM.
+
 Package: googler
 Version: 3.0-1
 Architecture: all
