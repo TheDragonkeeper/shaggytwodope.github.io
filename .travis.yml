@@ -1,11 +1,11 @@
 language: python
 python: '2.7'
 notifications:
-    email:
-        recipients:
-            - twodopeshaggy@gmail.com
-        on_success: change
-        on_failure: always
+  email:
+    recipients:
+    - twodopeshaggy@gmail.com
+    on_success: change
+    on_failure: always
 install:
 - npm install -g markdown-spellcheck
 - npm install -g csslint
@@ -26,4 +26,4 @@ after_success:
 - "./deploy.sh"
 env:
   global:
-    secure: phhKcCxzZgLsDrKH9ZCmh23RO9kVMRv6KUa5BXt7cjyic0u0NEvvjlgN4E1c5r2wnszW5LbJHnq4q0cF8RL7Q1HpcdmTbFvibJ0jJYj2kgMGWxUsjVqdTKYp4TDEGH3rJtTklrhaIUrU2SWV7adS+a9ykYESjdGmgv/Fc97P0HUo/N/z4hRvJVrRxfUqblJsDsExnbEz8GWd5BC66jSsCanCSp4+pGdp6FW+HZy1mm2/JJEZm7sGEpjSIjvxr5FydpE0X7+aPHvhbFb2ClGB+l3TIW6QpKG4vLm7VNgQatOz/G0GlXyNRLWqcbXq751vfnmEYMOqDAMdpJxsnwjPut4IWf98iSFcoxDLql7Zit265+R3qdjHnOzGRypGJJ02GgmTgP6lo56wdwtlenRNp5BWqneYfockkCd/S1Jqd8uZxdzvKUu2VG+5j4a5CfFboJ1JspgN6oVqgtkjaduS7zw2ENOo6M97tJu0zhCeOw92YY3OIcN1tyqxhqa1tSO8dhRnKkddcX4LSpGqiX7DkbORB3NsObweZ+ODiaSZGqNiMaQzF+ZU0/AL/GHJR1j7aXpS3wyeI5ABh6q8h+BD6O1XaW4nwrZ1lkwd9299+vBcpXBuRr3WHAiiSHgmgHOltLVruORGajalD+tReTofU0CUgX9qv7pI5URyr3Egj3Q=
+  - secure: dPpRhxBV4eLu0fN0KNcHD+b30AFsFpaftexnlWF8nh29C13Ii77jAvt12uuV/zX77nFcZdsL1lrYxPNuI7ZJy6ail97R5u6Hh12ZCpmyVCrd47AAYO+7XAGZjR/bVu+mEY+w5AS2ZjJGXIzBcCjRnTFUWoaXXxCXBI2yfIZyV0+fnAS8j4uJDz0mzUdWGjvdPeys5uEbJW6kLLvJRKAa0wv6VEIqTmICkIEc7WYNuqb4P7nKbNzcd7EgEKOcN9EhRDpzmo4Nb0zmmDA+OmNkP8nWT9X8lKlfR7xQMPSZTQz4uUmGVb/tlPM7Rbq0R+/rWXigNka5u/lhgiPBja2vhwGl17EAtQZ+jAXTPF8xbC8sXKF+Y9Awixx10AZgNilUp8ica2RFHYQ9H/KTR1jJTgZeojFMrkM/jUAsLpk4PdpsyjqC5GShkM3+9rkADzD/veZ/nX65jMJ5L4B6SslRd8q9BlbDenWhf+Jbn5NhaNXkLPhFj3kCifKILM08LXyVuMnpn7RVDt+xf5WeEaglNAkdeyGHbhBIVV0SYa1amH1ZpjG2445PYpZAdFHzuowLGtrkBq6z8kwK7idIsdKvEeyVOk35/Pidatbo+fogkAHaATjYtHStylOgVFrXEBR3eHUrirfNlf+EzP1L2ihDJiErQnQUYbPnxQD/h4BE+1w=
