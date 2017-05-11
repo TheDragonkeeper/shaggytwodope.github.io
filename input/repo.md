@@ -22,7 +22,7 @@ sudo pacman-key --lsign-key 7EC3233B
 
 TODO
 <pre class="language-c">
-List of sortware
+List of software
 </pre>
 
 

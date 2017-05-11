@@ -195,4 +195,20 @@ AUR
 PPA
 0.3.8
 Archlinux
+url
+gstreamer0.10
+boltdb
+golang
 vm
+ - input/fun.md
+TF2
+ - input/repo.md
+Repos
+repos
+pacman.conf
+shaggyrepo
+pgp
+pacman-key
+7EC3233B
+lsign-key
+TODO
