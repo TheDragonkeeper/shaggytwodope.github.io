@@ -398,15 +398,15 @@ Description: Nix Updater
  A simple Update Checker for Linux.
 
 Package: nnn
-Version: 1.0-1
+Version: 1.1-1~artful
 Architecture: amd64
 Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 47
-Filename: ./amd64/nnn_1.0-1_amd64.deb
-Size: 18268
-MD5sum: b9302d1494be21af51f8136ec188d1c3
-SHA1: e3629f14f674652107221af9337a37bc19f26df2
-SHA256: 2da0efc798623a0e3eb7fecf8b0783c9426efe69a50b2611f2cae4295abcca06
+Installed-Size: 63
+Filename: ./amd64/nnn_1.1-1_amd64.deb
+Size: 25200
+MD5sum: 799f2420b32f9d15c3669571eb95f9be
+SHA1: eeba1406a683f27d04dfc45eff6d98cc59501023
+SHA256: d1fdb6710bfaf795411daaafe6dc1feab6cdeba0f72d7e1baa61fab2c1eb004d
 Section: misc
 Priority: optional
 Homepage: https://github.com/jarun/nnn/
@@ -414,15 +414,15 @@ Description: Free, fast, friendly file browser.
  See https://github.com/jarun/nnn#readme.
 
 Package: nnn
-Version: 1.0-1
+Version: 1.1-1~artful
 Architecture: i386
 Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 42
-Filename: ./i386/nnn_1.0-1_i386.deb
-Size: 17456
-MD5sum: cf4acc6ec3c53b9fd630737dcf69d910
-SHA1: 5c6fed3a9c90e2893b080547c50801c0a976de7c
-SHA256: e2cdcaafe3d876c095944a09e4f5d0715c0e445e485dd73027f186f5fba02d7f
+Installed-Size: 59
+Filename: ./i386/nnn_1.1-1_i386.deb
+Size: 23658
+MD5sum: 3293c77e6b8dfa693b7391dad224b7f9
+SHA1: 8ce46944cb670de342b56852b9a04ef65bd9e484
+SHA256: 64db707b4c4cdb397f5b2f8b23a717578b431b4ea8f421ca39d59f4b18dceaa4
 Section: misc
 Priority: optional
 Homepage: https://github.com/jarun/nnn/
@@ -530,36 +530,6 @@ Description: Python 3 GTK+ 3 widgets to run an aptdaemon client
  working graphical client. The widgets can be used to initiate, to
  monitor and to control a transaction. The API is not stable yet.
 Original-Maintainer: Julian Andres Klode <jak@debian.org>
-
-Package: soundcloud-m3u
-Version: 1.0.0-2
-Architecture: amd64
-Maintainer: John Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 6678
-Filename: ./amd64/soundcloud-m3u_1.0.0-2_amd64.deb
-Size: 1516242
-MD5sum: 0f1c9e4277009994ab600aa75e5b1291
-SHA1: 9c7e26b9b04964bd6d759cade4f3170d25ccd3c0
-SHA256: 16e2f24e23de14c34dadab5e37085219912782e232366ffb64194d2cf12c22e5
-Section: net
-Priority: extra
-Homepage: https://github.com/dangodai/soundcloud-m3u
-Description: A command line tool to generate .m3u playlists pointing to Soundcloud streams
-
-Package: soundcloud-m3u
-Version: 1.0.0-2
-Architecture: i386
-Maintainer: John Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 5227
-Filename: ./i386/soundcloud-m3u_1.0.0-2_i386.deb
-Size: 1416048
-MD5sum: f9bfde214935419d4e6fc5531dffe263
-SHA1: f7af57513f0527f66f8a6459740da8d0c01781ac
-SHA256: 9ddcf9988350c0b1dd7277ba1aebe692b7213cdc94610a88376fcd7f4fa74f9b
-Section: net
-Priority: extra
-Homepage: https://github.com/dangodai/soundcloud-m3u
-Description: A command line tool to generate .m3u playlists pointing to Soundcloud streams
 
 Package: soundcloud-m3u
 Version: 1.1.0-1
