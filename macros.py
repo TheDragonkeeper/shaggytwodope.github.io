@@ -117,7 +117,4 @@ def myanime():
     for post in feed.entries:
         title = post.title
         posts_to_print.append(title)
-    for i, title in enumerate(posts_to_print):
-        print(title)
-        if(i >= 4):
-            break
+    return posts_to_print

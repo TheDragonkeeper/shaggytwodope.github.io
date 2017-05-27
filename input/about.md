@@ -36,6 +36,10 @@ But if you know how to contact me by any other means, I won't stop you.
 * [launchpad][launchpadlink] Packages for Ubuntu.
 * [github][githublink] Give me a good pull.
 
+## Latest Anime
+
+{{ myanime() }}
+
 [pubkeylink]: http://shaggytwodope.github.io/pubkey.asc
 [gnupglink]: https://www.gnupg.org/
 [twitterlink]: https://twitter.com/twodopeshaggy
