@@ -4,6 +4,10 @@ from datetime import datetime
 import os.path
 import email.utils
 import time
+import feedparser
+
+myanimeurl = 'https://myanimelist.net/rss.php?type=rw&u=shaggytwodope'
+
 
 _SITEMAP = """<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -105,3 +109,15 @@ def fortune():
     fortune = fortune.strip()
     fortune = fortune.replace("\n", " ")
     return fortune
+
+
+def myanime():
+    feed = feedparser.parse(myanimeurl)
+    posts_to_print = []
+    for post in feed.entries:
+        title = post.title
+        posts_to_print.append(title)
+    for i, title in enumerate(posts_to_print):
+        print(title)
+        if(i >= 4):
+            break
