@@ -117,4 +117,6 @@ def myanime():
     for post in feed.entries:
         title = post.title
         posts_to_print.append(title)
-    return posts_to_print
+        l = [str(posts_to_print[x]) for x in range(len(posts_to_print))]
+    mya = '\n'.join(['* %i: %s' % (n, l[n]) for n in xrange(len(l))])
+    return mya
