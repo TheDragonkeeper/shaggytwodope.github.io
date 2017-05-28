@@ -13,3 +13,12 @@ for p in posts:
     date = datetime.strptime(p["date"], "%Y-%m-%d").strftime("%B %d, %Y")
     print "  * **[%s](%s)** - %s" % (p.post, p.url, date) # markdown list item
 %}
+
+## Latest Github Activity
+
+{{ mygithub() }}
+
+## Latest Anime
+
+{{ myanime() }}
+
