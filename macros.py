@@ -8,6 +8,7 @@ import feedparser
 
 myanimeurl = 'https://myanimelist.net/rss.php?type=rw&u=shaggytwodope'
 
+mygithuburl = 'https://github.com/shaggytwodope.atom'
 
 _SITEMAP = """<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -118,5 +119,16 @@ def myanime():
         title = post.title
         posts_to_print.append(title)
         l = [str(posts_to_print[x]) for x in range(len(posts_to_print))]
-    mya = '\n'.join(['* %i: %s' % (n, l[n]) for n in xrange(len(l))])
+    mya = '\n'.join(['* %s' % (l[n]) for n in xrange(len(l))])
+    return mya
+
+
+def mygithub():
+    feed = feedparser.parse(mygithuburl)
+    posts_to_print = []
+    for post in feed.entries:
+        title = post.title
+        posts_to_print.append(title)
+        l = [str(posts_to_print[x]) for x in range(len(posts_to_print))]
+    mya = '\n'.join(['* %s' % (l[n]) for n in xrange(len(l))])
     return mya
