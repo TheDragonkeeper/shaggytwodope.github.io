@@ -16,7 +16,7 @@ C, C++, Go, HTML, JavaScript, Linux, Python
 I've been an opensource and Linux enthusiast for many years.
 I love information and the process of learning how things work.
 You'll find me trying to find a commandline solution to almost all
-types of simple or complex software.
+types of simple or complex software when possible.
 
 Here is my [pubkey.asc][pubkeylink]. If your not aware of gpg, then check it out [here][gnupglink].
 If you want to contact me in a serious way, or just be safer about how
