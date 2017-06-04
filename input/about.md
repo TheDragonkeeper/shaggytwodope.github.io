@@ -22,9 +22,8 @@ Here is my [pubkey.asc][pubkeylink]. If your not aware of gpg, then check it out
 If you want to contact me in a serious way, or just be safer about how
 you send information online. Using gpg is the ideal way to do so.
 
-I have a number of addresses you can use to send me mail. Tho I prefer
-john@nixheads.co.uk, you can also use twodopeshaggy@gmail.com,
-shaggytwodope@teknik.io and shaggytwodope@riseup.net.
+I have a number of addresses you can use to send me mail. Feel free to contact me via
+twodopeshaggy@gmail.com, shaggytwodope@teknik.io and shaggytwodope@riseup.net.
 But if you know how to contact me by any other means, I won't stop you.
 
 ## Places you can find me
