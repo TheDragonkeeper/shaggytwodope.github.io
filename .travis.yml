@@ -7,7 +7,6 @@ notifications:
     on_success: change
     on_failure: always
 install:
-- npm install -g markdown-spellcheck
 - npm install -g csslint
 - npm install -g try-thread-sleep
 - gem install mdl
@@ -20,7 +19,6 @@ script:
 - flake8
 - csslint --ignore=ids,box-model input/style.css
 - mdl -s mdl-rules.rb .
-- mdspell --ignore-numbers --en-us -ran "**/**/*.md"
 - make
 - "./link_validator.py output/"
 after_success:
