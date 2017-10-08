@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="/favicon.ico" rel="shortcut icon">
+  <title>ShaggyTwoDope - blog</title>
+  <meta name="description" content="A test post for highlighting code.">
+  <meta name="keywords" content="shaggy">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml">
+  <link href="/prism.css" rel="stylesheet">
+<link id="stylesheet" rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div id="content">
+
+    <p class="big">shaggy<span class="purpletxt">twodope</span>_<span class="greentxt">blog</span></p>
+    <div class="navtxt">
+      <a href="/index.html">Home</a>
+<a href="/about.html">About</a>
+<a href="/projects.html">Projects</a>
+<a href="/log.html">Log</a>
+<a href="/fun.html">Fun</a>
+<a href="/repo.html">Repos</a>
+    </div><br>
+
+    <div id="seperator">
+      <p></p>
+    </div>
+    <p class="bodytxt">
+      <h1>Code highlighting test Posted on 2016-06-02</h1>
+<p>Here is some code from a header file for a project I created.
+It's part of a simple tool to launch a single program that is
+predefined in the line <code>#define DEFAULT_RUN_COMMAND "lite-controlcenter"</code>.
+There is little use for this. This entire post is just to test things.</p>
+<pre><code class="language-c">
+/*
+* Copyright © 2016 Johnathan "Shaggytwodope" Jenkins <twodopeshaggy@gmail.com>
+*
+* Distributed under terms of the GPL2 license.
+*/
+
+#ifndef SRC_HEADERS_LITECC_H_
+#define SRC_HEADERS_LITECC_H_
+
+G_BEGIN_DECLS
+
+#define DEFAULT_ICON_NAME "lite-controlcenter"
+#define DEFAULT_TOOLTIP_MESSAGE "Linux Lite Control Center"
+#define DEFAULT_RUN_COMMAND "lite-controlcenter"
+
+typedef struct _LccPlugin {
+    XfcePanelPlugin *plugin;
+
+    GtkWidget       *button;
+    GtkWidget       *icon;
+
+    gchar           *icon_name;
+}
+LccPlugin;
+
+
+G_END_DECLS
+
+
+#endif /* SRC_HEADERS_LITECC_H_ */
+</code></pre>
+
+<p>You can find it <a href="https://github.com/shaggytwodope/litecontrolcenterapplet">here</a>
+or even check out my <a href="/projects.html">projects</a> page
+for way more stuff I've created. </p>
+      <div id="seperator">
+        <p></p>
+      </div>
+
+
+      <p>© 2016 - generated on October 08, 2017 <a href="http://shaggytwodope.github.io/rss.xml">rss</a> <a href="https://travis-ci.org/shaggytwodope/shaggytwodope.github.io">travis</a> <a href="https://github.com/shaggytwodope/shaggytwodope.github.io/tree/dev">commit c86f208
+</a>
+        </p>
+
+      </div>
+    <script src="/prism.js"></script>
+    </body>
+    </html>

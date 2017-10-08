@@ -1,0 +1,67 @@
+==================================================================
+https://keybase.io/shaggy
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://shaggytwodope.github.io
+  * I am shaggy (https://keybase.io/shaggy) on keybase.
+  * I have a public key with fingerprint 8F1A D38D E8A0 8544 A551  2981 7086 E9CC 7EC3 233B
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "8f1ad38de8a08544a55129817086e9cc7ec3233b",
+            "host": "keybase.io",
+            "key_id": "7086e9cc7ec3233b",
+            "kid": "0101b460864c6e6288d3b67898d718284f821b263cd92d60566a46224aa674c8d7550a",
+            "uid": "bc71de234142b3704f3188654a642a19",
+            "username": "shaggy"
+        },
+        "service": {
+            "hostname": "shaggytwodope.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1439022369,
+    "expire_in": 157680000,
+    "prev": "df64b6ad26bb0a42acebd0f3269f7fbf2dc15b4a6b4ba431be6de4efb490237c",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.34
+Comment: https://keybase.io/crypto
+
+yMIiAnicbZJfSBRBHMfvzLKuAqmeAg9cK7GO2J2dnZ09KQwsTU0TrQisa2Zn9m77
+c3vtrdr1x6CjIIrSMIj+WCgVgdRD0INUpKlBRT2V/VOpXorqIR8iCKxZq4egeRnm
+9/v+Pr/5/mYG504LhIKpIx8ft90vKg0+6q9qDmwYulO4T6IOy0jRfdIOPrVZdjLO
+3ZRrJz0pKmFLIUzFjGMiYw1ComkKMLCiyxhxwzR1bqpAVakUkRJO2q8QGErSfLnt
+iJg4xGwmov/R75hKyIqsUIhEGpqII4AxUynSsYGZrmCAoYWBQgFSTWYAhmQNIQIR
+AJAQpENTqDRNJgLXPIWjpq4wDlSoQEBVXYaWqmCMNEgQBEQxfGGau0myiwt1OkHi
+8Yx0ICKJWIttcn8Avo9/8l6rw5wUXx63vUQz/W0s5TqeYzo7hSjheal01Id4mZRf
+1cpp7A8vRu0kEwMVFS3cTdtOUooqQml6tt9AgaohA6AiIyLxPSnb5THbV2g6wrJY
+fh/eIpDMQpAiwgCiVCbCickpky0VIMPSLWoBZioaFSYppASqCuWIccgtCgVf1U3J
+d7g76UhRLK5J4r43O54kXrPLpQMD95pyA8FQYMb0HP9LBEKz8v9+lP5LeZMrR97U
+fHnflKn5fKOi6ETb1kunC8pan37v7OkaDX8Lp5eEVh1+1r1uYO/ZqofLlnXEDg7c
+qsSbG8zyZMm71QW3NvZnM6NRO5tTt/bJ+JW+ror5Mxd8aX/wsHz/15vbj/c0bOnt
+Kq/vi7yed7Vu/adzTa8vF4Trmx4EzlxkL5xNHcOdjc8n3PHEz93BkWuD2w4dW1o2
+Wj2Q7RYv0zhRURQu/mE8nax148FFa7KH9iwcyWtrLcKvMu0lI7lj2U9vY0NrX266
+sGF2cW1mmPTm51f2pgbXrMhWB+4ubij90bV6Z5716lThnKGJvSej7nXt/LTrICF9
+/YB63o6VLP4Jjl65HWkv/wXe7ymm
+=83LJ
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/shaggy
+
+==================================================================

@@ -1,0 +1,99 @@
+--InitWaveOutput Targets--
+ wave_init_random            Picks any of the 4 routes.
+ wave_init_random_center     Picks one of the 2 center routes (shorter).
+ wave_init_random_sides      Picks one of the 2 side routes (longer).
+ 
+ wave_init_side_left         Bots will go left tunnel, right cliff, left ramp.
+ wave_init_side_right        Bots will go right passage, left tunnel, right ramp.
+ wave_init_center_left       Bots will go left tunnel, center tunnel, right ramp.
+ wave_init_center_right      Bots will go right passage, center tunnel, left ramp.
+
+
+
+--StartWaveOutput Targets--
+ wave_start_normal           Starts wave with normal flag.
+ wave_start_timedflag        Starts wave with timed flag.
+
+
+
+--DoneOutput Targets--
+ wave_finished_normal        Does nothing.
+ wave_finished_wheel         Clears any active Wheel of Doom card.
+
+
+
+--Special Targets--
+                             Fire these with a FirstSpawnOutput, LastSpawnOutput or DoneOutput from a WaveSpawn.
+
+ enable_limited_support      Enables all limited support spawns, automatically called by wave_start_* relays.
+ disable_limited_support_a
+ ...
+ disable_limited_support_h   Disables the associated spawn points. Bots will no longer spawn there. Useful for limited time support.
+ 
+ relay_block_pit             Blocks the river deathpit
+ relay_unblock_pit           Unblocks the river deathpit, automatically called on wave end.
+
+ drop_random_peel            Drops a banana peel onto the map.
+ drop_50_peels               Drops 50 banana peels onto the map.
+ drop_100_peels              Drops 100 banana peels onto the map.
+ clear_banana_peels          Clears any active banana peels.
+                             Banana peels stun players that walk on them for 3 seconds. The peel is removed in the process. 
+                             Peels haven't been tested properly, use at your own risk.
+ 
+                             The following relays will spin the Wheel of Doom above the center drop, ending on the specified card. This takes about 7 seconds.
+ relay_wheel_go_uber         Gives the players Ubercharge. (TF_COND_INVULNERABLE_CARD_EFFECT)
+ relay_wheel_go_crits        Gives the players full Crits. (TF_COND_CRITBOOSTED_CARD_EFFECT)
+ relay_wheel_go_gravity      Lowers gravity for players.
+ relay_wheel_go_superspeed   Gives the players a speed boost. (TF_COND_SPEED_BOOST)
+ relay_wheel_go_jarate       Rain of jarate! Only jarates players.
+ relay_wheel_go_ghosts       Ghosts and Blue Skeletons will spawn at random all over the map.
+ relay_wheel_go_burn         Players are ignited every 15 seconds. (Can be resisted with upgrades)
+ relay_wheel_go_bleed        Players bleed every 15 seconds. (Cannot be resisted with upgrades)
+ relay_wheel_go_superjump    Effect not implemented but relay_wheel_apply_superjump and relay_wheel_end_superjump are fired for plugin interaction.
+ relay_wheel_go_bighead      Effect not implemented but relay_wheel_apply_bighead and relay_wheel_end_bighead are fired for plugin interaction.
+ relay_wheel_go_smallhead    Effect not implemented but relay_wheel_apply_smallhead and relay_wheel_end_smallhead are fired for plugin interaction.
+ relay_wheel_clear           Clears the current card, fired by wave_finished_wheel.
+
+
+
+--Bot Spawn Points--
+ spawn_generic               Center Drop.
+ spawn_main                  Center Drop (Bots using this won't spawn on active teleporters, all other spawns will).
+ spawn_sides                 Either Side Drop.
+
+ spawn_left                  Left Side Drop.
+ spawn_right                 Right Side Drop.
+ spawn_side_main             If bomb path is initially left, Left Side Drop otherwise Right Side.
+ spawn_side_opposite         If bomb path is initially left, Right Side Drop otherwise Left Side.
+
+ spawn_mission_sniper        Center Drop.
+ spawn_mission_spy           Side Drop (Spies teleport onto the field regardless of spawn).
+
+ spawn_limited_support_a     
+ ...
+ spawn_limited_support_h     Either Side Drop, can be disabled via special triggers for limited time support.
+
+ spawn_boss_hatman           Spawns the Horseless Headless Horsemann on the gallows. Slays the bot when HHH is defeated.
+ spawn_boss_eyeball          Spawns Monoculus on the gallows. Slays the bot when Monoculus is defeated or escapes. A server side plugin to disable the timer would be handy.
+ spawn_boss_merasmus         Spawns Merasmus on the gallows. Does not work properly, server side plugin most likely required.
+ spawn_wheel_dummy           Instantly slays any bot spawned here. Never actually used.
+
+ spawn_nowhere               Bots will never spawn, used for Wheel of Doom dummy support. FirstSpawnOutput fires on first spawn attempt, not on first actual spawn.
+
+
+
+--Special Bot Tags--
+ flank                       The Bot will flank whatever side they spawn on, does nothing from the center spawn.
+ flank_left                  The Bot will flank the left side.
+ flank_right                 The Bot will flank the right side.
+ bombrunner                  The Bot will spawn holding a bomb that is removed on death.
+ spawn_peels                 The Bot will drop banana peels. Peels despawn after 30 seconds. Peels are untested, use with caution.
+
+
+
+--Tank Spawn Points--    
+ tank_path_start_left        Tank will spawn at the left entrance.
+ tank_path_start_right       Tank will spawn at the right entrance.
+ tank_path_start_main        If bomb is initially going left, spawn at left entrance otherwise right.
+ tank_path_start_opposite    If bomb is initially going left, spawn at right entrance otherwise left.
+                             Tanks never go through the center tunnel

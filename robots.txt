@@ -1,0 +1,3 @@
+# robots.txt
+User-agent: *
+Sitemap: http://shaggytwodope.github.io/sitemap.xml

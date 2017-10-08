@@ -1,0 +1,1168 @@
+#base template_wizardry.pop
+#base template_wizardry_giant.pop
+
+WaveSchedule
+{
+	StartingCurrency 500
+	CanBotsAttackWhileInSpawnRoom No
+	RespawnWaveTime 6
+	FixedRespawnWaveTime No
+
+// MISSION: Sentry Buster
+	Mission
+	{
+		Objective DestroySentries
+		Where spawn_generic
+		CooldownTime 45
+
+		TFBot
+		{
+			Template T_TFBot_SentryBuster
+		}
+	}
+    
+//////////////////////////////////////////////////////////////
+// 	                        WAVE 1
+// a Melee Heavies -> Shotgun Heavies
+// b Demomen
+// c 2 Giant Demoknights + Huntsman Snipers
+//
+// - 700+100 Credits
+//////////////////////////////////////////////////////////////
+	Wave
+	{
+		InitWaveOutput
+		{
+			Target wave_init_random_sides
+			Action Trigger
+		}
+		StartWaveOutput
+		{
+			Target wave_start_normal
+			Action Trigger
+		}
+		DoneOutput
+		{
+			Target wave_finished_normal
+			Action Trigger
+		}
+		WaitWhenDone 65
+		Description "Testwave"
+		Checkpoint Yes
+
+// a Melee Heavies -> Shotgun Heavies
+		WaveSpawn
+		{
+			TotalCurrency 160
+
+			Name "stage1"
+
+			Where spawn_generic
+			TotalCount 20
+            MaxActive 8
+			SpawnCount 4
+			WaitBetweenSpawns 10
+			WaitBeforeStarting 0
+            
+            TFBot
+            {
+                Template T_TFBot_Heavyweapons_Heavyweight_Champ
+            }
+		}
+		WaveSpawn
+		{
+			TotalCurrency 100
+
+			Name "stage1"
+
+			Where spawn_generic
+			TotalCount 12
+            MaxActive 6
+			SpawnCount 3
+			WaitBetweenSpawns 10
+			WaitBeforeStarting 20
+            
+            TFBot
+            {
+                Template T_TFBot_Heavyweapons_Shotgun
+            }
+		}
+// b Demomen
+		WaveSpawn
+		{
+			TotalCurrency 140
+
+			Name "stage2"
+            WaitForAllSpawned "stage1"
+
+			Where spawn_generic
+			TotalCount 20
+            MaxActive 12
+			SpawnCount 4
+			WaitBetweenSpawns 10
+			WaitBeforeStarting 15
+            
+            TFBot
+            {
+                Template T_TFBot_Demoman
+            }
+		}
+// c 2 Giant Demoknights + Huntsman Snipers
+		WaveSpawn
+		{
+			TotalCurrency 100
+
+			Name "stage3"
+            WaitForAllSpawned "stage2"
+
+			Where spawn_generic
+			TotalCount 2
+            MaxActive 2
+			SpawnCount 1
+			WaitBetweenSpawns 30
+			WaitBeforeStarting 20
+            
+            TFBot
+            {
+                Template T_TFBot_Giant_DemoMan_Knight
+            }
+		}
+		WaveSpawn
+		{
+			TotalCurrency 200
+
+			Name "stage3"
+            WaitForAllSpawned "stage2"
+
+			Where spawn_side_opposite
+			TotalCount 24
+            MaxActive 12
+			SpawnCount 4
+			WaitBetweenSpawns 10
+			WaitBeforeStarting 10
+            
+            TFBot
+            {
+                Template T_TFBot_Sniper_Huntsman
+            }
+		}
+    }
+    
+//////////////////////////////////////////////////////////////
+// 	                        WAVE 2
+// a Scouts + Demoknights
+// b Flare Pyros + Steelfist Heavies
+// c Giant Demoman + QF Medics + Huntsman Snipers
+//
+// - 800+100 Credits
+//////////////////////////////////////////////////////////////
+	Wave
+	{
+		InitWaveOutput
+		{
+			Target wave_init_random_sides
+			Action Trigger
+		}
+		StartWaveOutput
+		{
+			Target wave_start_normal
+			Action Trigger
+		}
+		DoneOutput
+		{
+			Target wave_finished_normal
+			Action Trigger
+		}
+		WaitWhenDone 65
+		Description "Testwave"
+		Checkpoint Yes
+
+// a Scouts + Demoknights
+		WaveSpawn
+		{
+			TotalCurrency 150
+
+			Name "stage1"
+
+			Where spawn_generic
+			TotalCount 24
+            MaxActive 8
+			SpawnCount 4
+			WaitBetweenSpawns 10
+			WaitBeforeStarting 0
+            
+            TFBot
+            {
+                Template T_TFBot_Scout
+            }
+		}
+		WaveSpawn
+		{
+			TotalCurrency 100
+
+			Name "stage1"
+
+			Where spawn_side_main
+			TotalCount 18
+            MaxActive 6
+			SpawnCount 3
+			WaitBetweenSpawns 10
+			WaitBeforeStarting 1
+            
+            RandomChoice
+            {
+                TFBot
+                {
+                    Template T_TFBot_Demoman_Knight_A
+                }
+                TFBot
+                {
+                    Template T_TFBot_Demoman_Knight_B
+                }
+                TFBot
+                {
+                    Template T_TFBot_Demoman_Knight_C
+                }
+            }
+		}
+// b Flare Pyros + Steelfist Heavies
+		WaveSpawn
+		{
+			TotalCurrency 150
+
+			Name "stage2"
+            WaitForAllSpawned "stage1"
+
+			Where spawn_generic
+			TotalCount 24
+            MaxActive 8
+			SpawnCount 4
+			WaitBetweenSpawns 10
+			WaitBeforeStarting 10
+            
+            TFBot
+            {
+                Template T_TFBot_Pyro_Flaregun
+            }
+		}
+		WaveSpawn
+		{
+			TotalCurrency 100
+
+			Name "stage2"
+            WaitForAllSpawned "stage1"
+
+			Where spawn_generic
+			TotalCount 6
+            MaxActive 6
+			SpawnCount 1
+			WaitBetweenSpawns 10
+			WaitBeforeStarting 5
+            
+            TFBot
+            {
+                Template T_TFBot_Heavyweapons_Fist
+            }
+		}
+// c Giant Demoman + QF Medics + Huntsman Snipers
+		WaveSpawn
+		{
+			TotalCurrency 150
+
+			Name "stage3"
+            WaitForAllSpawned "stage2"
+
+			Where spawn_generic
+			TotalCount 5
+            MaxActive 5
+			SpawnCount 5
+			WaitBetweenSpawns 30
+			WaitBeforeStarting 20
+            
+            Squad
+            {
+                TFBot
+                {
+                    Template T_TFBot_Giant_Demoman
+                }
+                TFBot
+                {
+                    Template T_TFBot_Medic_BigHeal
+                }
+                TFBot
+                {
+                    Template T_TFBot_Medic_BigHeal
+                }
+                TFBot
+                {
+                    Template T_TFBot_Medic_BigHeal
+                }
+                TFBot
+                {
+                    Template T_TFBot_Medic_BigHeal
+                }
+            }
+		}
+		WaveSpawn
+		{
+			TotalCurrency 150
+
+			Name "stage3"
+            WaitForAllSpawned "stage2"
+
+			Where spawn_side_opposite
+			TotalCount 20
+            MaxActive 10
+			SpawnCount 5
+			WaitBetweenSpawns 10
+			WaitBeforeStarting 10
+            
+            TFBot
+            {
+                Template T_TFBot_Sniper_Huntsman
+            }
+		}
+    }
+
+//////////////////////////////////////////////////////////////
+// 	                        WAVE 3
+// a FaN Scouts
+// b Tank -> Melee Heavies
+// c Original Soldiers
+//
+// - 800+100 Credits
+//////////////////////////////////////////////////////////////
+	Wave
+	{
+		InitWaveOutput
+		{
+			Target wave_init_random_center
+			Action Trigger
+		}
+		StartWaveOutput
+		{
+			Target wave_start_normal
+			Action Trigger
+		}
+		DoneOutput
+		{
+			Target wave_finished_normal
+			Action Trigger
+		}
+		WaitWhenDone 65
+		Description "Testwave"
+		Checkpoint Yes
+
+// a FaN Scouts
+		WaveSpawn
+		{
+			TotalCurrency 200
+
+			Name "stage1"
+
+			Where spawn_generic
+			TotalCount 25
+            MaxActive 10
+			SpawnCount 5
+			WaitBetweenSpawns 8
+			WaitBeforeStarting 0
+
+            TFBot
+            {
+                Template T_TFBot_Scout_FAN
+            }
+		}
+// b Tank -> Melee Heavies
+        WaveSpawn
+		{
+			TotalCurrency 100
+
+			Name "stage2"
+            WaitForAllSpawned "stage1"
+
+			TotalCount 1
+            MaxActive 1
+			SpawnCount 1
+			WaitBeforeStarting 0
+
+            Tank
+			{
+				Health 25000
+				Speed 75
+				Name "TankBossA"
+				StartingPathTrackNode "tank_path_start_left"
+
+				OnKilledOutput
+				{
+					Target boss_dead_relay
+					Action Trigger
+				}
+
+				OnBombDroppedOutput
+				{
+					Target boss_deploy_relay
+					Action Trigger
+				}
+			}
+		}
+		WaveSpawn
+		{
+			TotalCurrency 200
+
+			Name "stage2"
+            WaitForAllSpawned "stage1"
+
+			Where spawn_generic
+			TotalCount 24
+            MaxActive 12
+			SpawnCount 4
+			WaitBetweenSpawns 8
+			WaitBeforeStarting 15
+
+            TFBot
+            {
+                Template T_TFBot_Heavyweapons_Heavyweight_Champ_Fast
+            }
+		}
+// c Original Soldiers
+		WaveSpawn
+		{
+			TotalCurrency 300
+
+			Name "stage3"
+            WaitForAllSpawned "stage2"
+
+			Where spawn_generic
+			TotalCount 30
+            MaxActive 10
+			SpawnCount 5
+			WaitBetweenSpawns 8
+			WaitBeforeStarting 10
+
+            TFBot
+            {
+                Template T_TFBot_Soldier_Original
+            }
+		}
+    }
+
+//////////////////////////////////////////////////////////////
+// 	                        WAVE 4
+// a Demomen + 2 Giant Scouts
+// b Pyros + Huntsman Snipers
+// c Giant Flare Pyros + Scouts
+//
+// - 800+100 Credits
+//////////////////////////////////////////////////////////////
+	Wave
+	{
+		InitWaveOutput
+		{
+			Target wave_init_random_sides
+			Action Trigger
+		}
+		StartWaveOutput
+		{
+			Target wave_start_normal
+			Action Trigger
+		}
+		DoneOutput
+		{
+			Target wave_finished_normal
+			Action Trigger
+		}
+		WaitWhenDone 65
+		Description "Testwave"
+		Checkpoint Yes
+
+// a Demomen + 2 Giant Scouts
+		WaveSpawn
+		{
+			TotalCurrency 150
+
+			Name "stage1"
+
+			Where spawn_generic
+			TotalCount 32
+            MaxActive 12
+			SpawnCount 4
+			WaitBetweenSpawns 8
+			WaitBeforeStarting 0
+
+            TFBot
+            {
+                Template T_TFBot_Demoman
+            }
+		}
+		WaveSpawn
+		{
+			TotalCurrency 100
+
+			Name "stage1"
+
+			Where spawn_generic
+			TotalCount 2
+            MaxActive 2
+			SpawnCount 1
+			WaitBetweenSpawns 25
+			WaitBeforeStarting 10
+
+            TFBot
+            {
+                Template T_TFBot_Giant_Scout_Fast
+            }
+		}
+// b Pyros + Huntsman Snipers
+		WaveSpawn
+		{
+			TotalCurrency 300
+
+			Name "stage2"
+            WaitForAllSpawned "stage1"
+
+			Where spawn_generic
+			TotalCount 30
+            MaxActive 10
+			SpawnCount 5
+			WaitBetweenSpawns 12
+			WaitBeforeStarting 10
+            
+            Squad
+            {
+                TFBot
+                {
+                    Template T_TFBot_Pyro
+                    Attributes AlwaysFireWeapon
+                }
+                TFBot
+                {
+                    Template T_TFBot_Sniper_Huntsman
+                }
+                TFBot
+                {
+                    Template T_TFBot_Sniper_Huntsman
+                }
+                TFBot
+                {
+                    Template T_TFBot_Sniper_Huntsman
+                }
+                TFBot
+                {
+                    Template T_TFBot_Sniper_Huntsman
+                }
+            }
+		}
+// c Giant Flare Pyros + Scouts
+		WaveSpawn
+		{
+			TotalCurrency 100
+
+			Name "stage3"
+            WaitForAllSpawned "stage2"
+
+			Where spawn_generic
+			TotalCount 2
+            MaxActive 2
+			SpawnCount 1
+			WaitBetweenSpawns 30
+			WaitBeforeStarting 20
+            
+            TFBot
+            {
+                Template T_TFBot_Giant_Pyro_Flare_Spammer
+            }
+		}
+		WaveSpawn
+		{
+			TotalCurrency 150
+
+			Name "stage3"
+            WaitForAllSpawned "stage2"
+
+			Where spawn_generic
+			TotalCount 32
+            MaxActive 12
+			SpawnCount 4
+			WaitBetweenSpawns 8
+			WaitBeforeStarting 10
+            
+            TFBot
+            {
+                Template T_TFBot_Scout
+            }
+		}
+    }
+
+//////////////////////////////////////////////////////////////
+// 	                        WAVE 5
+// a Demoknights + Steelfist Heavies
+// b Shotgun Heavies + Heavies
+// c Giant Heavy + Melee Scouts
+//
+// - 800+100 Credits
+//////////////////////////////////////////////////////////////
+	Wave
+	{
+		InitWaveOutput
+		{
+			Target wave_init_random_sides
+			Action Trigger
+		}
+		StartWaveOutput
+		{
+			Target wave_start_normal
+			Action Trigger
+		}
+		DoneOutput
+		{
+			Target wave_finished_normal
+			Action Trigger
+		}
+		WaitWhenDone 65
+		Description "Testwave"
+		Checkpoint Yes
+
+// a Demoknights + Steelfist Heavies
+		WaveSpawn
+		{
+			TotalCurrency 100
+
+			Name "stage1"
+
+			Where spawn_generic
+			TotalCount 10
+            MaxActive 8
+			SpawnCount 2
+			WaitBetweenSpawns 10
+			WaitBeforeStarting 0
+
+            TFBot
+            {
+                Template T_TFBot_Heavyweapons_Fist
+            }
+		}
+		WaveSpawn
+		{
+			TotalCurrency 200
+
+			Name "stage1"
+
+			Where spawn_side_main
+			TotalCount 32
+            MaxActive 8
+			SpawnCount 4
+			WaitBetweenSpawns 8
+			WaitBeforeStarting 5
+
+            RandomChoice
+            {
+                TFBot
+                {
+                    Template T_TFBot_Demoman_Knight_A
+                }
+                TFBot
+                {
+                    Template T_TFBot_Demoman_Knight_B
+                }
+                TFBot
+                {
+                    Template T_TFBot_Demoman_Knight_C
+                }
+            }
+		}
+// b Shotgun Heavies + Heavies
+		WaveSpawn
+		{
+			TotalCurrency 200
+
+			Name "stage2"
+            WaitForAllSpawned "stage1"
+
+			Where spawn_generic
+			TotalCount 24
+            MaxActive 8
+			SpawnCount 4
+			WaitBetweenSpawns 8
+			WaitBeforeStarting 10
+
+            TFBot
+            {
+                Template T_TFBot_Heavyweapons_Shotgun
+            }
+		}
+		WaveSpawn
+		{
+			TotalCurrency 100
+
+			Name "stage2"
+            WaitForAllSpawned "stage1"
+
+			Where spawn_generic
+			TotalCount 12
+            MaxActive 6
+			SpawnCount 3
+			WaitBetweenSpawns 10
+			WaitBeforeStarting 12
+
+            TFBot
+            {
+                Template T_TFBot_Heavyweapons
+            }
+		}
+// c Giant Heavy + Melee Scouts
+		WaveSpawn
+		{
+			TotalCurrency 150
+
+			Name "stage3"
+            WaitForAllSpawned "stage2"
+
+			Where spawn_generic
+			TotalCount 18
+            MaxActive 12
+			SpawnCount 3
+			WaitBetweenSpawns 8
+			WaitBeforeStarting 15
+
+            TFBot
+            {
+                Template T_TFBot_Scout_Melee
+            }
+		}
+		WaveSpawn
+		{
+			TotalCurrency 50
+
+			Name "stage3"
+            WaitForAllSpawned "stage2"
+
+			Where spawn_generic
+			TotalCount 1
+            MaxActive 1
+			SpawnCount 1
+			WaitBetweenSpawns 8
+			WaitBeforeStarting 10
+
+            TFBot
+            {
+                Template T_TFBot_Giant_Heavyweapons
+            }
+		}
+    }
+
+//////////////////////////////////////////////////////////////
+// 	                        WAVE 6
+// a Buff Soldiers + Huntsman Snipers
+// b Giant Burst Demoman + QF Medics + Melee Scouts
+// c Giant Burst Soldier + QF Medics + Melee Scouts
+//
+// - 800+100 Credits
+//////////////////////////////////////////////////////////////
+	Wave
+	{
+		InitWaveOutput
+		{
+			Target wave_init_random_sides
+			Action Trigger
+		}
+		StartWaveOutput
+		{
+			Target wave_start_normal
+			Action Trigger
+		}
+		DoneOutput
+		{
+			Target wave_finished_normal
+			Action Trigger
+		}
+		WaitWhenDone 65
+		Description "Testwave"
+		Checkpoint Yes
+
+// a Buff Soldiers + Huntsman Snipers
+		WaveSpawn
+		{
+			TotalCurrency 150
+
+			Name "stage1"
+
+			Where spawn_generic
+			TotalCount 15
+            MaxActive 6
+			SpawnCount 3
+			WaitBetweenSpawns 8
+			WaitBeforeStarting 0
+
+            TFBot
+            {
+                Template T_TFBot_Soldier_Extended_Buff_Banner
+            }
+		}
+		WaveSpawn
+		{
+			TotalCurrency 200
+
+			Name "stage1"
+
+			Where spawn_side_opposite
+			TotalCount 20
+            MaxActive 12
+			SpawnCount 4
+			WaitBetweenSpawns 8
+			WaitBeforeStarting 8
+
+            TFBot
+            {
+                Template T_TFBot_Sniper_Huntsman
+            }
+		}
+// b Giant Burst Demoman + QF Medics + Melee Scouts
+		WaveSpawn
+		{
+			TotalCurrency 150
+
+			Name "stage2"
+            WaitForAllSpawned "stage1"
+
+			Where spawn_generic
+			TotalCount 16
+            MaxActive 12
+			SpawnCount 4
+			WaitBetweenSpawns 10
+			WaitBeforeStarting 15
+
+            TFBot
+            {
+                Template T_TFBot_Scout_Melee
+            }
+		}
+		WaveSpawn
+		{
+			TotalCurrency 75
+
+			Name "stage2"
+            WaitForAllSpawned "stage1"
+
+			Where spawn_generic
+			TotalCount 5
+            MaxActive 5
+			SpawnCount 5
+			WaitBetweenSpawns 8
+			WaitBeforeStarting 10
+
+            Squad
+            {
+                TFBot
+                {
+                    Template T_TFBot_Giant_Demo_Burst
+                    Health 8500
+                }
+                TFBot
+                {
+                    Template T_TFBot_Medic_BigHeal
+                }
+                TFBot
+                {
+                    Template T_TFBot_Medic_BigHeal
+                }
+                TFBot
+                {
+                    Template T_TFBot_Medic_BigHeal
+                }
+                TFBot
+                {
+                    Template T_TFBot_Medic_BigHeal
+                }
+            }
+		}
+// c Giant Burst Soldier + QF Medics + Melee Scouts
+		WaveSpawn
+		{
+			TotalCurrency 150
+
+			Name "stage3"
+            WaitForAllSpawned "stage2"
+
+			Where spawn_generic
+			TotalCount 16
+            MaxActive 12
+			SpawnCount 4
+			WaitBetweenSpawns 10
+			WaitBeforeStarting 15
+
+            TFBot
+            {
+                Template T_TFBot_Scout_Melee
+            }
+		}
+		WaveSpawn
+		{
+			TotalCurrency 75
+
+			Name "stage3"
+            WaitForAllSpawned "stage2"
+
+			Where spawn_generic
+			TotalCount 5
+            MaxActive 5
+			SpawnCount 5
+			WaitBetweenSpawns 8
+			WaitBeforeStarting 10
+
+            Squad
+            {
+                TFBot
+                {
+                    Template T_TFBot_Giant_Soldier_Burst_Nocrit
+                    Health 8500
+                }
+                TFBot
+                {
+                    Template T_TFBot_Medic_BigHeal
+                }
+                TFBot
+                {
+                    Template T_TFBot_Medic_BigHeal
+                }
+                TFBot
+                {
+                    Template T_TFBot_Medic_BigHeal
+                }
+                TFBot
+                {
+                    Template T_TFBot_Medic_BigHeal
+                }
+            }
+		}
+    }
+
+//////////////////////////////////////////////////////////////
+// 	                        WAVE 7
+// a Giant Original Soldier + Flare Pyros
+// b 2 Tanks + Melee Heavies
+// c Warrior Heavy + QF Medics + Scouts
+//
+// - 800+100 Credits
+//////////////////////////////////////////////////////////////
+	Wave
+	{
+		InitWaveOutput
+		{
+			Target wave_init_random_center
+			Action Trigger
+		}
+		StartWaveOutput
+		{
+			Target wave_start_normal
+			Action Trigger
+		}
+		DoneOutput
+		{
+			Target wave_finished_normal
+			Action Trigger
+		}
+		WaitWhenDone 65
+		Description "Testwave"
+		Checkpoint Yes
+
+// a Giant Original Soldier + Flare Pyros
+		WaveSpawn
+		{
+			TotalCurrency 50
+
+			Name "stage1"
+
+			Where spawn_generic
+			TotalCount 1
+            MaxActive 1
+			SpawnCount 1
+			WaitBetweenSpawns 8
+			WaitBeforeStarting 0
+
+            TFBot
+            {
+                Template T_TFBot_Giant_Soldier_Crit
+                Health 8000
+            }
+		}
+		WaveSpawn
+		{
+			TotalCurrency 100
+
+			Name "stage1"
+
+			Where spawn_generic
+			TotalCount 20
+            MaxActive 12
+			SpawnCount 4
+			WaitBetweenSpawns 8
+			WaitBeforeStarting 8
+
+            TFBot
+            {
+                Template T_TFBot_Pyro_Flaregun
+            }
+		}
+// b 2 Tanks + Melee Heavies
+        WaveSpawn
+		{
+			TotalCurrency 100
+
+			Name "stage2"
+            WaitForAllSpawned "stage1"
+
+			TotalCount 1
+            MaxActive 1
+			SpawnCount 1
+			WaitBeforeStarting 5
+
+            Tank
+			{
+				Health 25000
+				Speed 75
+				Name "TankBossA"
+				StartingPathTrackNode "tank_path_start_right"
+
+				OnKilledOutput
+				{
+					Target boss_dead_relay
+					Action Trigger
+				}
+
+				OnBombDroppedOutput
+				{
+					Target boss_deploy_relay
+					Action Trigger
+				}
+			}
+		}
+        WaveSpawn
+		{
+			TotalCurrency 100
+
+			Name "stage2"
+            WaitForAllSpawned "stage1"
+
+			TotalCount 1
+            MaxActive 1
+			SpawnCount 1
+			WaitBeforeStarting 5
+
+            Tank
+			{
+				Health 25000
+				Speed 75
+				Name "TankBossA"
+				StartingPathTrackNode "tank_path_start_left"
+
+				OnKilledOutput
+				{
+					Target boss_dead_relay
+					Action Trigger
+				}
+
+				OnBombDroppedOutput
+				{
+					Target boss_deploy_relay
+					Action Trigger
+				}
+			}
+		}
+		WaveSpawn
+		{
+			TotalCurrency 150
+
+			Name "stage2"
+            WaitForAllSpawned "stage1"
+
+			Where spawn_generic
+			TotalCount 24
+            MaxActive 12
+			SpawnCount 4
+			WaitBetweenSpawns 10
+			WaitBeforeStarting 35
+            
+            TFBot
+            {
+                Template T_TFBot_Heavyweapons_Heavyweight_Champ
+            }
+		}
+// c Warrior Heavy + QF Medics + Scouts
+		WaveSpawn
+		{
+			TotalCurrency 100
+
+			Name "stage3"
+            WaitForAllSpawned "stage2"
+
+			Where spawn_generic
+			TotalCount 7
+            MaxActive 7
+			SpawnCount 7
+			WaitBetweenSpawns 8
+			WaitBeforeStarting 16
+            
+            Squad
+            {
+                TFBot
+                {
+                    Template T_TFBot_Giant_Heavyweapons_Warrior
+                    Health 15000
+                }
+                TFBot
+                {
+                    Template T_TFBot_Medic_BigHeal
+                }
+                TFBot
+                {
+                    Template T_TFBot_Medic_BigHeal
+                }
+                TFBot
+                {
+                    Template T_TFBot_Medic_BigHeal
+                }
+                TFBot
+                {
+                    Template T_TFBot_Medic_BigHeal
+                }
+                TFBot
+                {
+                    Template T_TFBot_Medic_BigHeal
+                }
+                TFBot
+                {
+                    Template T_TFBot_Medic_BigHeal
+                }
+            }
+		}
+		WaveSpawn
+		{
+			TotalCurrency 200
+
+			Name "stage3"
+            WaitForAllSpawned "stage2"
+
+			Where spawn_side_opposite
+			TotalCount 36
+            MaxActive 12
+			SpawnCount 6
+			WaitBetweenSpawns 8
+			WaitBeforeStarting 16
+            
+            TFBot
+            {
+                Template T_TFBot_Scout
+            }
+		}
+    }
+}
+
+
+
+
+
+
+
+
+
+

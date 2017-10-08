@@ -1,0 +1,12 @@
+Archive: sid
+Origin: Internet
+Label: Shaggy's Repo
+Architecture: i386 amd64 arm64 armhf all
+Date: Sun, 08 Oct 2017 02:57:12 UTC
+Valid-Until: Tue, 30 Nov 2038 00:00:00 UTC
+MD5Sum:
+ 9c9290d6e3428524a7d7a75a651bf84d            21105 Packages
+ dd9ec16b6763afe9a1bf86733295ee13            21105 Packages
+SHA256:
+ 8453ce528936efaf7ad4882f2c2715d815ec1d086e92b93057454edd40a8470b            21105 Packages
+ d328d0e535fce8afb311b0432a1bee3ca5a8dc3f5a2e378060f8f014b16737b2             5976 Packages.gz

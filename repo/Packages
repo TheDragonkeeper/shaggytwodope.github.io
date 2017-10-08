@@ -1,0 +1,546 @@
+Package: alarm-clock
+Version: 1.4.9-1
+Architecture: i386
+Maintainer: John Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 1147
+Depends: libc6 (>= 2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.31.8), libgstreamer1.0-0 (>= 1.0.0), libgtk2.0-0 (>= 2.14.0), libnotify4 (>= 0.7.0), libunique-1.0-0 (>= 1.0.0)
+Filename: ./i386/alarm-clock_1.4.9-1_i386.deb
+Size: 504638
+MD5sum: b63eefc6e69b6d3e5864a319017f41df
+SHA1: 2a2e9d40e89da84b2c29fa0ddffbc40260754d08
+SHA256: 64770a01badcdf6cc10ed28d28795b5c9576e032a5cf70de4d89e39d0936abca
+Section: misc
+Priority: optional
+Homepage: https://github.com/shaggytwodope/alarm-clock
+Description: Alarm clock for the desktop.
+
+Package: alarm-clock
+Version: 1.4.9-1
+Architecture: amd64
+Maintainer: John Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 1127
+Depends: libc6 (>= 2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.31.8), libgstreamer1.0-0 (>= 1.0.0), libgtk2.0-0 (>= 2.14.0), libnotify4 (>= 0.7.0), libunique-1.0-0 (>= 1.0.0)
+Filename: ./amd64/alarm-clock_1.4.9-1_amd64.deb
+Size: 499404
+MD5sum: 85cd8a5fe8abca784da6a03a47113e3d
+SHA1: 3f7741c06c6f7d66af4f7e6c910b94ec78687aa6
+SHA256: 3e0ee90fd1a8e525e3b8d12631bb6870306a8f6a4fa04d18915e4c70ae9e7b64
+Section: misc
+Priority: optional
+Homepage: https://github.com/shaggytwodope/alarm-clock
+Description: Alarm clock for the desktop.
+
+Package: aptdaemon
+Version: 1.1.1+bzr982-0ubuntu16
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 196
+Depends: python3:any (>= 3.2~), gir1.2-glib-2.0, python3-aptdaemon (= 1.1.1+bzr982-0ubuntu16), python3-gi, policykit-1
+Recommends: lintian
+Breaks: python3-aptdaemon.pkcompat, software-center (<< 1.1.21)
+Replaces: python3-aptdaemon.pkcompat
+Filename: ./all/aptdaemon_1.1.1+bzr982-0ubuntu16_all.deb
+Size: 13462
+MD5sum: a4c04c4d9ada078bfdbd77d426224429
+SHA1: 6d38a4d5301dcbd8fc9d52c6988de7a56a02b7d3
+SHA256: 5e82be0ae6af7ed942bf66088eca46adddae48f8e3d78e0e65b6bb1b5e029d43
+Section: admin
+Priority: extra
+Homepage: https://launchpad.net/aptdaemon
+Description: transaction based package management service
+ Aptdaemon allows normal users to perform package management tasks, e.g.
+ refreshing the cache, upgrading the system, installing or removing software
+ packages.
+ .
+ Currently it comes with the following main features:
+ .
+  - Programming language independent D-Bus interface, which allows one to
+    write clients in several languages
+  - Runs only if required (D-Bus activation)
+  - Fine grained privilege management using PolicyKit, e.g. allowing all
+    desktop user to query for updates without entering a password
+  - Support for media changes during installation from DVD/CDROM
+  - Support for debconf (Debian's package configuration system)
+  - Support for attaching a terminal to the underlying dpkg call
+ .
+ This package contains the aptd script and all the data files required to run
+ the daemon. Moreover it contains the aptdcon script, which is a command
+ line client for aptdaemon. The API is not stable yet.
+Original-Maintainer: Julian Andres Klode <jak@debian.org>
+
+Package: aptdaemon-data
+Source: aptdaemon
+Version: 1.1.1+bzr982-0ubuntu16
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 246
+Replaces: python-aptdaemon-gtk (<= 0.41+bzr580-0ubuntu1)
+Filename: ./all/aptdaemon-data_1.1.1+bzr982-0ubuntu16_all.deb
+Size: 160508
+MD5sum: 226e6d24325237d5bf71a16d0879c11e
+SHA1: 1472d08373ea93b5e75d64f6642fe0226868841d
+SHA256: ed883e0aef3cbe88f1f53a4e6775a1d3c6463ed4b3a1bc61f89f7e39911869e3
+Section: admin
+Priority: extra
+Homepage: https://launchpad.net/aptdaemon
+Description: data files for clients
+ Aptdaemon is a transaction based package management daemon. It allows
+ normal users to perform package management tasks, e.g. refreshing the
+ cache, upgrading the system, installing or removing software packages.
+ .
+ This package provides common data files (e.g. icons) for aptdaemon
+ clients.
+Original-Maintainer: Julian Andres Klode <jak@debian.org>
+
+Package: archiver
+Version: 2.0.0-0
+Architecture: i386
+Maintainer: John Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 2961
+Filename: ./i386/archiver_2.0.0-0_i386.deb
+Size: 835836
+MD5sum: a21f09bc6da093a16b2a7681f60e78b5
+SHA1: 9452b2eaf07c85d27b02aa4941033d8bdbccf6c5
+SHA256: 8c4c1c59dcee04eed7e36c0416859b4dd084c2b97ed3ea93d8bdf45a23c804b8
+Section: net
+Priority: extra
+Homepage: https://github.com/mholt/archiver
+Description: Easily create and extract .zip, .tar, .tar.gz, .tar.bz2, .tar.xz, and .rar (extract-only) files with Go
+ Package archiver makes it trivially easy to make and extract common archive formats such as .zip, and .tar.gz. Simply name the input and output file(s).
+
+Package: archiver
+Version: 2.0.0-0
+Architecture: amd64
+Maintainer: John Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 3713
+Filename: ./amd64/archiver_2.0.0-0_amd64.deb
+Size: 887810
+MD5sum: 508906761c5424f0b504a0a2e027fd6e
+SHA1: 77a2acd85ebc3ea4c692efbbff56d90e82f378bb
+SHA256: ec5518ea5284567bf23ddd68d5d8f13d28132ef0ae0a5c56646fcc2a9a0520ba
+Section: net
+Priority: extra
+Homepage: https://github.com/mholt/archiver
+Description: Easily create and extract .zip, .tar, .tar.gz, .tar.bz2, .tar.xz, and .rar (extract-only) files with Go
+ Package archiver makes it trivially easy to make and extract common archive formats such as .zip, and .tar.gz. Simply name the input and output file(s).
+
+Package: bcal
+Version: 1.7-1
+Architecture: amd64
+Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 57
+Filename: ./amd64/bcal_1.7-1_amd64.deb
+Size: 24138
+MD5sum: b23446ebeffe7a33dc59b959a89f625d
+SHA1: 4e01f0efbf543a23680817aeec7def65c0de316e
+SHA256: e3cc71a367c3e378f9af217ae5a571ffccb0385a9d3e9bb3dca4cdab8ea9c888
+Section: misc
+Priority: optional
+Homepage: https://github.com/jarun/bcal/
+Description: Byte CALculator. The engineer's utility for storage conversions and calculations.
+ See https://github.com/jarun/bcal#readme.
+
+Package: buku
+Version: 3.4.0-1
+Architecture: all
+Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 159
+Depends: python3 (>= 3.3), python3-crypto, python3-bs4, python3-urllib3, python3-requests
+Filename: ./all/buku_3.4.0-1_all.deb
+Size: 43542
+MD5sum: d33b3b52ba54acb040d19694bb542257
+SHA1: 9439a617f45255ea25bba77e7f293b955abd45c0
+SHA256: 706c3bb58edff4d559588ee780f31be7485e9d1566cc910c97517b48a310599e
+Section: misc
+Priority: optional
+Homepage: https://github.com/jarun/buku/
+Description: Powerful command-line bookmark manager.
+ See https://github.com/jarun/Buku#readme.
+
+Package: diary
+Version: 0.3-3
+Architecture: i386
+Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 30
+Filename: ./i386/diary_0.3-3_i386.deb
+Size: 8448
+MD5sum: d607a16015fbb849b7d493f01911e2c2
+SHA1: 365c1cc3460ec347f0de57d0048ca7939d416608
+SHA256: 4844cf5f69159f15547744290a6e2a2fa813acebd42b272bd5df9c3329130081
+Section: misc
+Priority: optional
+Homepage: https://github.com/in0rdr/diary
+Description: Simple CLI diary
+ See https://github.com/in0rdr/diary
+
+Package: diary
+Version: 0.3-3
+Architecture: amd64
+Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 30
+Filename: ./amd64/diary_0.3-3_amd64.deb
+Size: 8484
+MD5sum: eda3d3a7ada3cc815623c58a7ee8e9da
+SHA1: 9e4137592b20d6ed04de020f3df7e782182ced1b
+SHA256: 57084faadc939c955aee1dda8983a6ba8f1a6adbb2c81caf0a8d952ae6a16812
+Section: misc
+Priority: optional
+Homepage: https://github.com/in0rdr/diary
+Description: Simple CLI diary
+ See https://github.com/in0rdr/diary
+
+Package: drive
+Version: 0.3.9.1-2
+Architecture: armhf
+Maintainer: John Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 11611
+Filename: ./armhf/drive_0.3.9.1-2_armhf.deb
+Size: 2226722
+MD5sum: 552b9984a52eb5f0deba868fcff4ed76
+SHA1: 0484e97638668f7615022f44fda547f2b7a0020d
+SHA256: 66f8b40d170e3e2950649f5a91e0158cf1a0934093b55359d4700baa27150be2
+Section: net
+Priority: extra
+Homepage: https://github.com/odeke-em/drive
+Description: Google Drive tool written in Go language
+ Command line tool for managing data on Google drive.
+
+Package: drive
+Version: 0.3.9.1-2
+Architecture: i386
+Maintainer: John Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 11362
+Filename: ./i386/drive_0.3.9.1-2_i386.deb
+Size: 2469526
+MD5sum: 047f887c1298fa1c9b08f87a51936d11
+SHA1: 2728c6cf415802567446449664d22a6c85f95e28
+SHA256: f6c2fa4aa91ca8aca2208371989054224e0e5c9401626d3733f7010f820ff89b
+Section: net
+Priority: extra
+Homepage: https://github.com/odeke-em/drive
+Description: Google Drive tool written in Go language
+ Command line tool for managing data on Google drive.
+
+Package: drive
+Version: 0.3.9.1-2
+Architecture: amd64
+Maintainer: John Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 14983
+Filename: ./amd64/drive_0.3.9.1-2_amd64.deb
+Size: 2893862
+MD5sum: 9063c814fda1e7c6429e36adbf463195
+SHA1: fca8b0186d18feca95eab985dbb1ab2b8fa89427
+SHA256: aa38198e4617914be676ea35189fd11da19636d1265482384bc0c31b96a8387f
+Section: net
+Priority: extra
+Homepage: https://github.com/odeke-em/drive
+Description: Google Drive tool written in Go language
+ Command line tool for managing data on Google drive.
+
+Package: drive
+Version: 0.3.9.1-2
+Architecture: arm64
+Maintainer: John Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 13105
+Filename: ./arm64/drive_0.3.9.1-2_arm64.deb
+Size: 2334328
+MD5sum: fbd67ecb9ce09b8346a86d5078cea1ad
+SHA1: 3d360050c0bf16d51eb8a1a85a423e92fbb04a5d
+SHA256: d95fbf43cac129fc4a20d3056ba11ad3481c6ee512c178df225a14f560a410e7
+Section: net
+Priority: extra
+Homepage: https://github.com/odeke-em/drive
+Description: Google Drive tool written in Go language
+ Command line tool for managing data on Google drive.
+
+Package: flif
+Version: 0.3-16
+Architecture: i386
+Maintainer: John Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 3921
+Depends: apngdis (>= 2.5), imagemagick (>= 8:6.8)
+Recommends: viewflif, gif2flif, apng2flif
+Filename: ./i386/flif_0.3-16_i386.deb
+Size: 582072
+MD5sum: d90b6957955d378f1289fe7ebcc3bbe9
+SHA1: 84f5eaa831dc00401308646cb5975009fa593e1f
+SHA256: c89839067e36a1dc1a78d826e295455e49951ccdf159b2d9123dd43c30e279d4
+Section: graphics
+Priority: optional
+Homepage: http://flif.info
+Description: Free Lossless Image Format (FLIF) encoder/decoder
+ FLIF is a lossless image (and animation) format.
+ It tends to compress better than other image compression formats.
+ This is the reference implementation of the FLIF encoder/decoder.
+ The command-line utility 'flif' converts FLIF to/from PNG or PNM.
+
+Package: flif
+Version: 0.3-16
+Architecture: amd64
+Maintainer: John Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 3937
+Depends: apngdis (>= 2.5), imagemagick (>= 8:6.8)
+Recommends: viewflif, gif2flif, apng2flif
+Filename: ./amd64/flif_0.3-16_amd64.deb
+Size: 516630
+MD5sum: 558462bc25059b269e83dda7fead0098
+SHA1: 814c500114ff8ae9a3c7da65c27a0e677fc6072d
+SHA256: 298dcf02a7491e1b9c1cd99bc92a3cda3f636607ed92bb396debf960c8d9744e
+Section: graphics
+Priority: optional
+Homepage: http://flif.info
+Description: Free Lossless Image Format (FLIF) encoder/decoder
+ FLIF is a lossless image (and animation) format.
+ It tends to compress better than other image compression formats.
+ This is the reference implementation of the FLIF encoder/decoder.
+ The command-line utility 'flif' converts FLIF to/from PNG or PNM.
+
+Package: googler
+Version: 3.4.0-1
+Architecture: all
+Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 110
+Depends: python3 (>= 3.3)
+Filename: ./all/googler_3.4.0-1_all.deb
+Size: 35798
+MD5sum: e3f654bd20bbdd5e641c006d1bbd8bb8
+SHA1: 15b2566e4df8d6b0fcc9658b23c6f1b0c941bd98
+SHA256: 097c672b1d29eb83186b1a59c9227ac52f6db4ad896db81d874190007caa819a
+Section: misc
+Priority: optional
+Homepage: https://github.com/jarun/googler/
+Description: Google from the command-line.
+ See https://github.com/jarun/googler#readme.
+
+Package: imgp
+Version: 2.4.1-1
+Architecture: all
+Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 35
+Depends: python3 (>= 3.3), python3-pil
+Filename: ./all/imgp_2.4.1-1_all.deb
+Size: 12182
+MD5sum: f09cab1a6f332612feb34cc959aae02a
+SHA1: f4786495ece6f24c5563febe0462c3d915a17466
+SHA256: dafae2f0e4d02869dabf98653b3447a70b63aa3e668ce0a736d952cf59d35e61
+Section: misc
+Priority: optional
+Homepage: https://github.com/jarun/imgp/
+Description: Superfast batch image resizer and rotator.
+ See https://github.com/jarun/imgp#readme.
+
+Package: nixcontrolcenter
+Source: nixcontrolcenter
+Version: 1.0.1
+Architecture: all
+Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
+Depends: gir1.2-webkit-3.0, python3-tk, python3-gi, gnome-packagekit
+Filename: ./all/nixcontrolcenter_1.0.1_all.deb
+Size: 134852
+MD5sum: f21f5f9fa3d460d7fa114c55e4099408
+SHA1: e6ac905fc8b3b6f0e23c54bc71175b452257d073
+SHA256: 9edaf20ab13b9730263cc00bcedbb03f59e90da5c9cb7022269fda4d45286cfa
+Section: xfce
+Priority: optional
+Homepage: http://github.com/nixheads/nixcontrolcenter
+Description: Nix Control Center
+ A simple Control Center for Linux.
+
+Package: nixupdater
+Source: nixupdater
+Version: 1.0.0
+Architecture: all
+Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
+Depends: python-apt, python-gtk2, python-pyinotify, python-notify2,  gnome-packagekit, python-aptdaemon
+Filename: ./all/nixupdater_1.0.0_all.deb
+Size: 12128
+MD5sum: 2785d164f463ddd84ca447c6d0de27bc
+SHA1: dc8a86d64452871023c126a99e98a296e5a75e47
+SHA256: c156ea51707ad8b42f2563056c587e1224a8b9018194553b851b48f3e87859a8
+Section: xfce
+Priority: optional
+Homepage: http://github.com/nixheads/nixupdater
+Description: Nix Updater
+ A simple Update Checker for Linux.
+
+Package: nnn
+Version: 1.5-0~zesty
+Architecture: i386
+Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 73
+Filename: ./i386/nnn_1.5-1_i386.deb
+Size: 32010
+MD5sum: c579d2be8c9ae988bccb0bb7fc0f7179
+SHA1: 46d8a5d545b47657feb535809fa181fe45e7e4b3
+SHA256: 3cc9ce567c4bf95c3627f51d28af6bddc4281f92245697e00ac16e448edc7cf8
+Section: misc
+Priority: optional
+Homepage: https://github.com/jarun/nnn/
+Description: The missing terminal file browser for X.
+ See https://github.com/jarun/nnn#readme.
+
+Package: nnn
+Version: 1.5-0~zesty
+Architecture: amd64
+Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 73
+Filename: ./amd64/nnn_1.5-1_amd64.deb
+Size: 31414
+MD5sum: cdd0f0fe76032754dd37844264e48a45
+SHA1: b1be8c03128b2b6cf414399e2393a535a0fed8af
+SHA256: 5a388e2e0d827104ef2dd87ca7e47e3ad47b46b5261a994bd09771c54d20e247
+Section: misc
+Priority: optional
+Homepage: https://github.com/jarun/nnn/
+Description: The missing terminal file browser for X.
+ See https://github.com/jarun/nnn#readme.
+
+Package: pdd
+Version: 1.1.0-1
+Architecture: all
+Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 24
+Depends: python3 (>= 3.3), python3-dateutil
+Filename: ./all/pdd_1.1.0-1_all.deb
+Size: 7232
+MD5sum: c7da3b350dade84b0766c989663e952d
+SHA1: 85d770d8478e9c47d090fbb9c58b7113737d851a
+SHA256: 38dfb22286ef23c08b15cb4dd41dc97ae15f9e92d3a185c76a8d79039c407933
+Section: misc
+Priority: optional
+Homepage: https://github.com/jarun/pdd/
+Description: Tiny date, time diff calculator
+ See https://github.com/jarun/pdd#readme.
+
+Package: python-aptdaemon
+Source: aptdaemon
+Version: 1.1.1+bzr982-0ubuntu16
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 495
+Depends: python (>= 2.7), python (<< 2.8), python:any (>= 2.6.6-7~), aptdaemon, python-apt (>= 0.8.5~ubuntu1), python-debian, python-defer, python-dbus, python-gi, gir1.2-glib-2.0, gir1.2-packagekitglib-1.0 (>= 1.1.1), python-pkg-resources, iso-codes
+Filename: ./all/python-aptdaemon_1.1.1+bzr982-0ubuntu16_all.deb
+Size: 74548
+MD5sum: a622bd1c1451acc2edc698f0b77910d2
+SHA1: aa44a66780d8961dc783f1ce8d16e1d3d7e0ce77
+SHA256: 30eca5c43e95942b2788c0bbcde393753caf865441c4b0761b4ea0c1e90c8acc
+Section: python
+Priority: extra
+Homepage: https://launchpad.net/aptdaemon
+Description: Python 2 module for the server and client of aptdaemon
+ Aptdaemon is a transaction based package management service. It allows
+ normal users to perform package management tasks, e.g. refreshing the
+ cache, upgrading the system, installing or removing software packages.
+ .
+ This package provides the Python 2 modules required to run aptdaemon
+ and to implement a client. The API is not stable yet.
+Original-Maintainer: Julian Andres Klode <jak@debian.org>
+
+Package: python-aptdaemon.gtk3widgets
+Source: aptdaemon
+Version: 1.1.1+bzr982-0ubuntu16
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 86
+Depends: python-aptdaemon (= 1.1.1+bzr982-0ubuntu16), python-gi, gir1.2-gtk-3.0, gir1.2-vte-2.91, aptdaemon-data
+Conflicts: python-aptdaemon-gtk (<< 0.41+bzr582-0ubuntu1)
+Replaces: python-aptdaemon-gtk (<< 0.41+bzr582-0ubuntu1)
+Filename: ./all/python-aptdaemon.gtk3widgets_1.1.1+bzr982-0ubuntu16_all.deb
+Size: 13800
+MD5sum: cc341e9bbdf8a4c53cb75036587a3cc2
+SHA1: 818ac8ce654302fae1a720a2193e4485b92c111f
+SHA256: eaf0692de502abd9eaf7360caa0d08f63f3d5d4f19613ac55add5700e5f572ef
+Section: python
+Priority: extra
+Homepage: https://launchpad.net/aptdaemon
+Description: Python 2 GTK+ 3 widgets to run an aptdaemon client
+ Aptdaemon is a transaction based package management daemon. It allows
+ normal users to perform package management tasks, e.g. refreshing the
+ cache, upgrading the system, installing or removing software packages.
+ .
+ This package provides the Python 2 GTK+ 3 widgets to implement a fully
+ working graphical client. The widgets can be used to initiate, to
+ monitor and to control a transaction. The API is not stable yet.
+Original-Maintainer: Julian Andres Klode <jak@debian.org>
+
+Package: python3-aptdaemon
+Source: aptdaemon
+Version: 1.1.1+bzr982-0ubuntu16
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 498
+Depends: python3:any (>= 3.3.2-2~), aptdaemon, gir1.2-glib-2.0, gir1.2-packagekitglib-1.0 (>= 1.1.1), python3-apt (>= 0.8.5~ubuntu1), python3-defer (>= 1.0.6), python3-dbus, python3-gi, python3-pkg-resources, iso-codes
+Filename: ./all/python3-aptdaemon_1.1.1+bzr982-0ubuntu16_all.deb
+Size: 76964
+MD5sum: 6f44259acf7587ccd98efabcf8d6943c
+SHA1: b1c93c4d1ceb556ff3cdd6b1137bb9e30380b560
+SHA256: 9db2fde5f452de9f65dd6c76e88252b21afd7f7d952deb63b233bce1f012cbf6
+Section: python
+Priority: extra
+Homepage: https://launchpad.net/aptdaemon
+Description: Python 3 module for the server and client of aptdaemon
+ Aptdaemon is a transaction based package management service. It allows
+ normal users to perform package management tasks, e.g. refreshing the
+ cache, upgrading the system, installing or removing software packages.
+ .
+ This package provides the Python 3 modules required to run aptdaemon
+ and to implement a client. The API is not stable yet.
+Original-Maintainer: Julian Andres Klode <jak@debian.org>
+
+Package: python3-aptdaemon.gtk3widgets
+Source: aptdaemon
+Version: 1.1.1+bzr982-0ubuntu16
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 86
+Depends: python3:any (>= 3.3.2-2~), python3-aptdaemon (= 1.1.1+bzr982-0ubuntu16), python3-gi, gir1.2-gtk-3.0, gir1.2-vte-2.91, aptdaemon-data
+Conflicts: python-aptdaemon-gtk (<< 0.41+bzr582-0ubuntu1)
+Replaces: python-aptdaemon-gtk (<< 0.41+bzr582-0ubuntu1)
+Filename: ./all/python3-aptdaemon.gtk3widgets_1.1.1+bzr982-0ubuntu16_all.deb
+Size: 13884
+MD5sum: ef23d4084142ca33ccb0e56abfa54c10
+SHA1: 0ad37b30fc7b17c77705661bd57d2c8a41216f66
+SHA256: 7a075f389ad974966a28291f16342c1d176e83e712b8e22ee346c7c9aaa6e0cd
+Section: python
+Priority: extra
+Homepage: https://launchpad.net/aptdaemon
+Description: Python 3 GTK+ 3 widgets to run an aptdaemon client
+ Aptdaemon is a transaction based package management daemon. It allows
+ normal users to perform package management tasks, e.g. refreshing the
+ cache, upgrading the system, installing or removing software packages.
+ .
+ This package provides the Python 3 GTK+ 3 widgets to implement a fully
+ working graphical client. The widgets can be used to initiate, to
+ monitor and to control a transaction. The API is not stable yet.
+Original-Maintainer: Julian Andres Klode <jak@debian.org>
+
+Package: soundcloud-m3u
+Version: 1.1.0-1
+Architecture: i386
+Maintainer: John Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 4208
+Filename: ./i386/soundcloud-m3u_1.1.0-1_i386.deb
+Size: 1266694
+MD5sum: 3da6461ecba44fcfb21308ca6b68fe91
+SHA1: 3fe16be5f661a3c55f2c2db6121d7e13b2934fb8
+SHA256: 3f0db1671495298682d965cc94ac2eaf9253c963eca044591920c79172ef2a28
+Section: net
+Priority: extra
+Homepage: https://github.com/dangodai/soundcloud-m3u
+Description: A command line tool to generate .m3u playlists pointing to Soundcloud streams
+
+Package: soundcloud-m3u
+Version: 1.1.0-1
+Architecture: amd64
+Maintainer: John Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 4783
+Filename: ./amd64/soundcloud-m3u_1.1.0-1_amd64.deb
+Size: 1353474
+MD5sum: 485ab246d7d2cb4bcbb2c12d6e45a27b
+SHA1: 004b1570042f361f8d7020fec05781e8b356ea7e
+SHA256: 20f8d384e6f93e17448ff3d53dc128abb02424b9bb95fed7e025866cbd9f22ea
+Section: net
+Priority: extra
+Homepage: https://github.com/dangodai/soundcloud-m3u
+Description: A command line tool to generate .m3u playlists pointing to Soundcloud streams
+

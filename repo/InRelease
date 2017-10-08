@@ -1,0 +1,26 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Archive: sid
+Origin: Internet
+Label: Shaggy's Repo
+Architecture: i386 amd64 arm64 armhf all
+Date: Sun, 08 Oct 2017 02:57:12 UTC
+Valid-Until: Tue, 30 Nov 2038 00:00:00 UTC
+MD5Sum:
+ 9c9290d6e3428524a7d7a75a651bf84d            21105 Packages
+ dd9ec16b6763afe9a1bf86733295ee13            21105 Packages
+SHA256:
+ 8453ce528936efaf7ad4882f2c2715d815ec1d086e92b93057454edd40a8470b            21105 Packages
+ d328d0e535fce8afb311b0432a1bee3ca5a8dc3f5a2e378060f8f014b16737b2             5976 Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iQEzBAEBCAAdFiEEjxrTjeighUSlUSmBcIbpzH7DIzsFAlnZlAgACgkQcIbpzH7D
+Izum6Af7B2JKVJtiao98zvu9wsbYqnrqS8vvj/2THyATt4G7W/xS+k21+gBNlS5G
+H8kH0tgB0hOaMyAdS98EuQA0q/GeU4me1OTly3UDvTb8PKo8cow6OPzOiReXg3Wq
+iGiF/M30Hr2lBgniE+BzFM6hevNGCAWzoDurcD7fBYoyGTL508QfhKtqqnRwv7hn
+GaaAcNAtxtXfB39Ijf1t9L03dPdfoZugc6WTKjwx+wzp8osFilyjho/4s3Hdk8nK
+8xhpmpzPJhCt3KjlyzYL3wMhEue5E/uzvPwa16QIQ7bRiUq/eiJGi9fWw8xdQXom
+q3CrWt+0w3na0GR2y8VsoSPYbNe5RA==
+=SmRh
+-----END PGP SIGNATURE-----
