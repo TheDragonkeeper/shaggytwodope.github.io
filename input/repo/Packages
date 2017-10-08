@@ -1,30 +1,30 @@
 Package: alarm-clock
-Version: 1.4.5-1
-Architecture: amd64
+Version: 1.4.9-1
+Architecture: i386
 Maintainer: John Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 1125
+Installed-Size: 1147
 Depends: libc6 (>= 2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.31.8), libgstreamer1.0-0 (>= 1.0.0), libgtk2.0-0 (>= 2.14.0), libnotify4 (>= 0.7.0), libunique-1.0-0 (>= 1.0.0)
-Filename: ./amd64/alarm-clock_1.4.5-1_amd64.deb
-Size: 497322
-MD5sum: 9cd6574497ee83cdee9e83adc62bb705
-SHA1: 3ac688936d3ef2e56417854b053815b99118d941
-SHA256: 72ef613000c33a5878873e3836e6e1efc3798014e412598ee0e1cad01d11ad95
+Filename: ./i386/alarm-clock_1.4.9-1_i386.deb
+Size: 504638
+MD5sum: b63eefc6e69b6d3e5864a319017f41df
+SHA1: 2a2e9d40e89da84b2c29fa0ddffbc40260754d08
+SHA256: 64770a01badcdf6cc10ed28d28795b5c9576e032a5cf70de4d89e39d0936abca
 Section: misc
 Priority: optional
 Homepage: https://github.com/shaggytwodope/alarm-clock
 Description: Alarm clock for the desktop.
 
 Package: alarm-clock
-Version: 1.4.5-1
-Architecture: i386
+Version: 1.4.9-1
+Architecture: amd64
 Maintainer: John Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 1142
+Installed-Size: 1127
 Depends: libc6 (>= 2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.31.8), libgstreamer1.0-0 (>= 1.0.0), libgtk2.0-0 (>= 2.14.0), libnotify4 (>= 0.7.0), libunique-1.0-0 (>= 1.0.0)
-Filename: ./i386/alarm-clock_1.4.5-1_i386.deb
-Size: 500604
-MD5sum: 35918e90826f460b73b7bf3f6232299e
-SHA1: a27c62ed59719017f2d7f1375e807eff75eb5104
-SHA256: 320ccd7043b715e1d65cf3dcb1da538cb7002fc7f637b7694ecaa2b3d0d757f0
+Filename: ./amd64/alarm-clock_1.4.9-1_amd64.deb
+Size: 499404
+MD5sum: 85cd8a5fe8abca784da6a03a47113e3d
+SHA1: 3f7741c06c6f7d66af4f7e6c910b94ec78687aa6
+SHA256: 3e0ee90fd1a8e525e3b8d12631bb6870306a8f6a4fa04d18915e4c70ae9e7b64
 Section: misc
 Priority: optional
 Homepage: https://github.com/shaggytwodope/alarm-clock
@@ -94,22 +94,6 @@ Original-Maintainer: Julian Andres Klode <jak@debian.org>
 
 Package: archiver
 Version: 2.0.0-0
-Architecture: amd64
-Maintainer: John Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 3713
-Filename: ./amd64/archiver_2.0.0-0_amd64.deb
-Size: 887810
-MD5sum: 508906761c5424f0b504a0a2e027fd6e
-SHA1: 77a2acd85ebc3ea4c692efbbff56d90e82f378bb
-SHA256: ec5518ea5284567bf23ddd68d5d8f13d28132ef0ae0a5c56646fcc2a9a0520ba
-Section: net
-Priority: extra
-Homepage: https://github.com/mholt/archiver
-Description: Easily create and extract .zip, .tar, .tar.gz, .tar.bz2, .tar.xz, and .rar (extract-only) files with Go
- Package archiver makes it trivially easy to make and extract common archive formats such as .zip, and .tar.gz. Simply name the input and output file(s).
-
-Package: archiver
-Version: 2.0.0-0
 Architecture: i386
 Maintainer: John Jenkins <twodopeshaggy@gmail.com>
 Installed-Size: 2961
@@ -124,16 +108,32 @@ Homepage: https://github.com/mholt/archiver
 Description: Easily create and extract .zip, .tar, .tar.gz, .tar.bz2, .tar.xz, and .rar (extract-only) files with Go
  Package archiver makes it trivially easy to make and extract common archive formats such as .zip, and .tar.gz. Simply name the input and output file(s).
 
+Package: archiver
+Version: 2.0.0-0
+Architecture: amd64
+Maintainer: John Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 3713
+Filename: ./amd64/archiver_2.0.0-0_amd64.deb
+Size: 887810
+MD5sum: 508906761c5424f0b504a0a2e027fd6e
+SHA1: 77a2acd85ebc3ea4c692efbbff56d90e82f378bb
+SHA256: ec5518ea5284567bf23ddd68d5d8f13d28132ef0ae0a5c56646fcc2a9a0520ba
+Section: net
+Priority: extra
+Homepage: https://github.com/mholt/archiver
+Description: Easily create and extract .zip, .tar, .tar.gz, .tar.bz2, .tar.xz, and .rar (extract-only) files with Go
+ Package archiver makes it trivially easy to make and extract common archive formats such as .zip, and .tar.gz. Simply name the input and output file(s).
+
 Package: bcal
-Version: 1.4-2
+Version: 1.7-1
 Architecture: amd64
 Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 75
-Filename: ./amd64/bcal_1.4-2_amd64.deb
-Size: 18772
-MD5sum: 71f7bcc56ddb406410f56563644faf83
-SHA1: d521e2a66102edc0277cd08df01a45ec3d9355b0
-SHA256: a27af896a1a52c21e983b62bb795e16f11dd48d0592a1fbd7d0d04c8d8d83c4c
+Installed-Size: 57
+Filename: ./amd64/bcal_1.7-1_amd64.deb
+Size: 24138
+MD5sum: b23446ebeffe7a33dc59b959a89f625d
+SHA1: 4e01f0efbf543a23680817aeec7def65c0de316e
+SHA256: e3cc71a367c3e378f9af217ae5a571ffccb0385a9d3e9bb3dca4cdab8ea9c888
 Section: misc
 Priority: optional
 Homepage: https://github.com/jarun/bcal/
@@ -141,54 +141,21 @@ Description: Byte CALculator. The engineer's utility for storage conversions and
  See https://github.com/jarun/bcal#readme.
 
 Package: buku
-Version: 2.9.0-2
+Version: 3.4.0-1
 Architecture: all
 Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 122
+Installed-Size: 159
 Depends: python3 (>= 3.3), python3-crypto, python3-bs4, python3-urllib3, python3-requests
-Filename: ./all/buku_2.9.0-2_all.deb
-Size: 36760
-MD5sum: c931dd0dca3ed7fa40dfe8b34c468164
-SHA1: dfd320324d7e1840db2a094463b74ddbc50528cb
-SHA256: ff94f357dd1199c3dd3cf7d26cb4144d7d48799e81dda17c3616d4116445a134
+Filename: ./all/buku_3.4.0-1_all.deb
+Size: 43542
+MD5sum: d33b3b52ba54acb040d19694bb542257
+SHA1: 9439a617f45255ea25bba77e7f293b955abd45c0
+SHA256: 706c3bb58edff4d559588ee780f31be7485e9d1566cc910c97517b48a310599e
 Section: misc
 Priority: optional
 Homepage: https://github.com/jarun/buku/
-Description: Powerful command-line bookmark manager
+Description: Powerful command-line bookmark manager.
  See https://github.com/jarun/Buku#readme.
-
-Package: buku
-Version: 3.0.0-1
-Architecture: all
-Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 132
-Depends: python3 (>= 3.3), python3-crypto, python3-bs4, python3-urllib3, python3-requests
-Filename: ./all/buku_3.0.0-1_all.deb
-Size: 39676
-MD5sum: bb67ecf913ea3dd0dbf8b471260324b6
-SHA1: 5163bd8ef393f6ef3fbc1efce44125fdd71eb089
-SHA256: c2cc834f99d129354fd4d919438b33428038736edbe9812acdde6df477b4d3b3
-Section: misc
-Priority: optional
-Homepage: https://github.com/jarun/buku/
-Description: Powerful command-line bookmark manager
- See https://github.com/jarun/Buku#readme.
-
-Package: diary
-Version: 0.3-3
-Architecture: amd64
-Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 30
-Filename: ./amd64/diary_0.3-3_amd64.deb
-Size: 8484
-MD5sum: eda3d3a7ada3cc815623c58a7ee8e9da
-SHA1: 9e4137592b20d6ed04de020f3df7e782182ced1b
-SHA256: 57084faadc939c955aee1dda8983a6ba8f1a6adbb2c81caf0a8d952ae6a16812
-Section: misc
-Priority: optional
-Homepage: https://github.com/in0rdr/diary
-Description: Simple CLI diary
- See https://github.com/in0rdr/diary
 
 Package: diary
 Version: 0.3-3
@@ -206,32 +173,32 @@ Homepage: https://github.com/in0rdr/diary
 Description: Simple CLI diary
  See https://github.com/in0rdr/diary
 
-Package: drive
-Version: 0.3.9.1-2
-Architecture: arm64
-Maintainer: John Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 13105
-Filename: ./arm64/drive_0.3.9.1-2_arm64.deb
-Size: 2334328
-MD5sum: fbd67ecb9ce09b8346a86d5078cea1ad
-SHA1: 3d360050c0bf16d51eb8a1a85a423e92fbb04a5d
-SHA256: d95fbf43cac129fc4a20d3056ba11ad3481c6ee512c178df225a14f560a410e7
-Section: net
-Priority: extra
-Homepage: https://github.com/odeke-em/drive
-Description: Google Drive tool written in Go language
- Command line tool for managing data on Google drive.
+Package: diary
+Version: 0.3-3
+Architecture: amd64
+Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 30
+Filename: ./amd64/diary_0.3-3_amd64.deb
+Size: 8484
+MD5sum: eda3d3a7ada3cc815623c58a7ee8e9da
+SHA1: 9e4137592b20d6ed04de020f3df7e782182ced1b
+SHA256: 57084faadc939c955aee1dda8983a6ba8f1a6adbb2c81caf0a8d952ae6a16812
+Section: misc
+Priority: optional
+Homepage: https://github.com/in0rdr/diary
+Description: Simple CLI diary
+ See https://github.com/in0rdr/diary
 
 Package: drive
 Version: 0.3.9.1-2
-Architecture: amd64
+Architecture: armhf
 Maintainer: John Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 14983
-Filename: ./amd64/drive_0.3.9.1-2_amd64.deb
-Size: 2893862
-MD5sum: 9063c814fda1e7c6429e36adbf463195
-SHA1: fca8b0186d18feca95eab985dbb1ab2b8fa89427
-SHA256: aa38198e4617914be676ea35189fd11da19636d1265482384bc0c31b96a8387f
+Installed-Size: 11611
+Filename: ./armhf/drive_0.3.9.1-2_armhf.deb
+Size: 2226722
+MD5sum: 552b9984a52eb5f0deba868fcff4ed76
+SHA1: 0484e97638668f7615022f44fda547f2b7a0020d
+SHA256: 66f8b40d170e3e2950649f5a91e0158cf1a0934093b55359d4700baa27150be2
 Section: net
 Priority: extra
 Homepage: https://github.com/odeke-em/drive
@@ -256,40 +223,35 @@ Description: Google Drive tool written in Go language
 
 Package: drive
 Version: 0.3.9.1-2
-Architecture: armhf
+Architecture: amd64
 Maintainer: John Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 11611
-Filename: ./armhf/drive_0.3.9.1-2_armhf.deb
-Size: 2226722
-MD5sum: 552b9984a52eb5f0deba868fcff4ed76
-SHA1: 0484e97638668f7615022f44fda547f2b7a0020d
-SHA256: 66f8b40d170e3e2950649f5a91e0158cf1a0934093b55359d4700baa27150be2
+Installed-Size: 14983
+Filename: ./amd64/drive_0.3.9.1-2_amd64.deb
+Size: 2893862
+MD5sum: 9063c814fda1e7c6429e36adbf463195
+SHA1: fca8b0186d18feca95eab985dbb1ab2b8fa89427
+SHA256: aa38198e4617914be676ea35189fd11da19636d1265482384bc0c31b96a8387f
 Section: net
 Priority: extra
 Homepage: https://github.com/odeke-em/drive
 Description: Google Drive tool written in Go language
  Command line tool for managing data on Google drive.
 
-Package: flif
-Version: 0.3-16
-Architecture: amd64
+Package: drive
+Version: 0.3.9.1-2
+Architecture: arm64
 Maintainer: John Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 3937
-Depends: apngdis (>= 2.5), imagemagick (>= 8:6.8)
-Recommends: viewflif, gif2flif, apng2flif
-Filename: ./amd64/flif_0.3-16_amd64.deb
-Size: 516630
-MD5sum: 558462bc25059b269e83dda7fead0098
-SHA1: 814c500114ff8ae9a3c7da65c27a0e677fc6072d
-SHA256: 298dcf02a7491e1b9c1cd99bc92a3cda3f636607ed92bb396debf960c8d9744e
-Section: graphics
-Priority: optional
-Homepage: http://flif.info
-Description: Free Lossless Image Format (FLIF) encoder/decoder
- FLIF is a lossless image (and animation) format.
- It tends to compress better than other image compression formats.
- This is the reference implementation of the FLIF encoder/decoder.
- The command-line utility 'flif' converts FLIF to/from PNG or PNM.
+Installed-Size: 13105
+Filename: ./arm64/drive_0.3.9.1-2_arm64.deb
+Size: 2334328
+MD5sum: fbd67ecb9ce09b8346a86d5078cea1ad
+SHA1: 3d360050c0bf16d51eb8a1a85a423e92fbb04a5d
+SHA256: d95fbf43cac129fc4a20d3056ba11ad3481c6ee512c178df225a14f560a410e7
+Section: net
+Priority: extra
+Homepage: https://github.com/odeke-em/drive
+Description: Google Drive tool written in Go language
+ Command line tool for managing data on Google drive.
 
 Package: flif
 Version: 0.3-16
@@ -312,51 +274,55 @@ Description: Free Lossless Image Format (FLIF) encoder/decoder
  This is the reference implementation of the FLIF encoder/decoder.
  The command-line utility 'flif' converts FLIF to/from PNG or PNM.
 
-Package: googler
-Version: 3.0-1
-Architecture: all
-Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 103
-Depends: python3 (>= 3.3)
-Filename: ./all/googler_3.0-1_all.deb
-Size: 33292
-MD5sum: c419829cf65d2fcfbb2652e7eccd926d
-SHA1: 182fbd478489cef9400d2922b5f6ebbbe4b1bdf1
-SHA256: 929bebf2271f1753ad1cbac76a9f8d94b04a356deeba2d6121f2ea83ef94e6b2
-Section: misc
+Package: flif
+Version: 0.3-16
+Architecture: amd64
+Maintainer: John Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 3937
+Depends: apngdis (>= 2.5), imagemagick (>= 8:6.8)
+Recommends: viewflif, gif2flif, apng2flif
+Filename: ./amd64/flif_0.3-16_amd64.deb
+Size: 516630
+MD5sum: 558462bc25059b269e83dda7fead0098
+SHA1: 814c500114ff8ae9a3c7da65c27a0e677fc6072d
+SHA256: 298dcf02a7491e1b9c1cd99bc92a3cda3f636607ed92bb396debf960c8d9744e
+Section: graphics
 Priority: optional
-Homepage: https://github.com/jarun/googler/
-Description: Google Search and News from the command-line
- See https://github.com/jarun/googler#readme.
+Homepage: http://flif.info
+Description: Free Lossless Image Format (FLIF) encoder/decoder
+ FLIF is a lossless image (and animation) format.
+ It tends to compress better than other image compression formats.
+ This is the reference implementation of the FLIF encoder/decoder.
+ The command-line utility 'flif' converts FLIF to/from PNG or PNM.
 
 Package: googler
-Version: 3.1-1
+Version: 3.4.0-1
 Architecture: all
 Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 105
+Installed-Size: 110
 Depends: python3 (>= 3.3)
-Filename: ./all/googler_3.1-1_all.deb
-Size: 33658
-MD5sum: f845b54b700ae39c700766cad078540d
-SHA1: 48fe3b8bef923e33bb701efbec7b32f724585019
-SHA256: d830f40064d1ec4e7267fa5fee0ee30b8fd63228c7f3728c7c3ecb6bdec89d87
+Filename: ./all/googler_3.4.0-1_all.deb
+Size: 35798
+MD5sum: e3f654bd20bbdd5e641c006d1bbd8bb8
+SHA1: 15b2566e4df8d6b0fcc9658b23c6f1b0c941bd98
+SHA256: 097c672b1d29eb83186b1a59c9227ac52f6db4ad896db81d874190007caa819a
 Section: misc
 Priority: optional
 Homepage: https://github.com/jarun/googler/
-Description: Google Search and News from the command-line
+Description: Google from the command-line.
  See https://github.com/jarun/googler#readme.
 
 Package: imgp
-Version: 2.2-0
+Version: 2.4.1-1
 Architecture: all
 Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 34
+Installed-Size: 35
 Depends: python3 (>= 3.3), python3-pil
-Filename: ./all/imgp_2.2-0_all.deb
-Size: 11136
-MD5sum: 991da49b697347e697de9281e07b437c
-SHA1: 25fcf324a9c4cc92eed079a6d722f4c0a8404dc2
-SHA256: 6e077fd9c7ab597874ac1c24a2892796183269c317750b854a6889031fd10c83
+Filename: ./all/imgp_2.4.1-1_all.deb
+Size: 12182
+MD5sum: f09cab1a6f332612feb34cc959aae02a
+SHA1: f4786495ece6f24c5563febe0462c3d915a17466
+SHA256: dafae2f0e4d02869dabf98653b3447a70b63aa3e668ce0a736d952cf59d35e61
 Section: misc
 Priority: optional
 Homepage: https://github.com/jarun/imgp/
@@ -398,36 +364,53 @@ Description: Nix Updater
  A simple Update Checker for Linux.
 
 Package: nnn
-Version: 1.1-1~artful
-Architecture: amd64
+Version: 1.5-0~zesty
+Architecture: i386
 Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 63
-Filename: ./amd64/nnn_1.1-1_amd64.deb
-Size: 25200
-MD5sum: 799f2420b32f9d15c3669571eb95f9be
-SHA1: eeba1406a683f27d04dfc45eff6d98cc59501023
-SHA256: d1fdb6710bfaf795411daaafe6dc1feab6cdeba0f72d7e1baa61fab2c1eb004d
+Installed-Size: 73
+Filename: ./i386/nnn_1.5-1_i386.deb
+Size: 32010
+MD5sum: c579d2be8c9ae988bccb0bb7fc0f7179
+SHA1: 46d8a5d545b47657feb535809fa181fe45e7e4b3
+SHA256: 3cc9ce567c4bf95c3627f51d28af6bddc4281f92245697e00ac16e448edc7cf8
 Section: misc
 Priority: optional
 Homepage: https://github.com/jarun/nnn/
-Description: Free, fast, friendly file browser.
+Description: The missing terminal file browser for X.
  See https://github.com/jarun/nnn#readme.
 
 Package: nnn
-Version: 1.1-1~artful
-Architecture: i386
+Version: 1.5-0~zesty
+Architecture: amd64
 Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 59
-Filename: ./i386/nnn_1.1-1_i386.deb
-Size: 23658
-MD5sum: 3293c77e6b8dfa693b7391dad224b7f9
-SHA1: 8ce46944cb670de342b56852b9a04ef65bd9e484
-SHA256: 64db707b4c4cdb397f5b2f8b23a717578b431b4ea8f421ca39d59f4b18dceaa4
+Installed-Size: 73
+Filename: ./amd64/nnn_1.5-1_amd64.deb
+Size: 31414
+MD5sum: cdd0f0fe76032754dd37844264e48a45
+SHA1: b1be8c03128b2b6cf414399e2393a535a0fed8af
+SHA256: 5a388e2e0d827104ef2dd87ca7e47e3ad47b46b5261a994bd09771c54d20e247
 Section: misc
 Priority: optional
 Homepage: https://github.com/jarun/nnn/
-Description: Free, fast, friendly file browser.
+Description: The missing terminal file browser for X.
  See https://github.com/jarun/nnn#readme.
+
+Package: pdd
+Version: 1.1.0-1
+Architecture: all
+Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 24
+Depends: python3 (>= 3.3), python3-dateutil
+Filename: ./all/pdd_1.1.0-1_all.deb
+Size: 7232
+MD5sum: c7da3b350dade84b0766c989663e952d
+SHA1: 85d770d8478e9c47d090fbb9c58b7113737d851a
+SHA256: 38dfb22286ef23c08b15cb4dd41dc97ae15f9e92d3a185c76a8d79039c407933
+Section: misc
+Priority: optional
+Homepage: https://github.com/jarun/pdd/
+Description: Tiny date, time diff calculator
+ See https://github.com/jarun/pdd#readme.
 
 Package: python-aptdaemon
 Source: aptdaemon
@@ -533,21 +516,6 @@ Original-Maintainer: Julian Andres Klode <jak@debian.org>
 
 Package: soundcloud-m3u
 Version: 1.1.0-1
-Architecture: amd64
-Maintainer: John Jenkins <twodopeshaggy@gmail.com>
-Installed-Size: 4783
-Filename: ./amd64/soundcloud-m3u_1.1.0-1_amd64.deb
-Size: 1353474
-MD5sum: 485ab246d7d2cb4bcbb2c12d6e45a27b
-SHA1: 004b1570042f361f8d7020fec05781e8b356ea7e
-SHA256: 20f8d384e6f93e17448ff3d53dc128abb02424b9bb95fed7e025866cbd9f22ea
-Section: net
-Priority: extra
-Homepage: https://github.com/dangodai/soundcloud-m3u
-Description: A command line tool to generate .m3u playlists pointing to Soundcloud streams
-
-Package: soundcloud-m3u
-Version: 1.1.0-1
 Architecture: i386
 Maintainer: John Jenkins <twodopeshaggy@gmail.com>
 Installed-Size: 4208
@@ -556,6 +524,21 @@ Size: 1266694
 MD5sum: 3da6461ecba44fcfb21308ca6b68fe91
 SHA1: 3fe16be5f661a3c55f2c2db6121d7e13b2934fb8
 SHA256: 3f0db1671495298682d965cc94ac2eaf9253c963eca044591920c79172ef2a28
+Section: net
+Priority: extra
+Homepage: https://github.com/dangodai/soundcloud-m3u
+Description: A command line tool to generate .m3u playlists pointing to Soundcloud streams
+
+Package: soundcloud-m3u
+Version: 1.1.0-1
+Architecture: amd64
+Maintainer: John Jenkins <twodopeshaggy@gmail.com>
+Installed-Size: 4783
+Filename: ./amd64/soundcloud-m3u_1.1.0-1_amd64.deb
+Size: 1353474
+MD5sum: 485ab246d7d2cb4bcbb2c12d6e45a27b
+SHA1: 004b1570042f361f8d7020fec05781e8b356ea7e
+SHA256: 20f8d384e6f93e17448ff3d53dc128abb02424b9bb95fed7e025866cbd9f22ea
 Section: net
 Priority: extra
 Homepage: https://github.com/dangodai/soundcloud-m3u
